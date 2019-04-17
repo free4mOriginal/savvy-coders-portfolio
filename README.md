@@ -1,10 +1,9 @@
-# **Zhana Liner**
-## free4m@gmail.com
+## Zhana Liner
+### free4m [at] gmail [dot] com
 
-1. _artist_
-2. _coder_
+_artist_ | _coder_
 
-## Specialties
+### Specialties
 
 - Web Dev
 - Visual Art
