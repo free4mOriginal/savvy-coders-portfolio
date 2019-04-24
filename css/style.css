@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 11pt;
 }
 
@@ -10,7 +10,6 @@ a:visited {
     color: steelblue;
     text-decoration: none;
     display: inline-block;
-    padding: 2px;
 }
 
 a:hover,
@@ -39,10 +38,10 @@ hr {
 
 header {
     background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed;
-    background-size: 100vw;
+    background-size: 100%;
     text-align: center;
-    height: 360px;
-    padding-top: 220px
+    height: 500px;
+    padding-top: 220px;
 }
 
 footer {
@@ -51,7 +50,7 @@ footer {
 }
 
 #about {
-    padding: 10% 30vw 10% 30vw;
+    padding: 0 30vw 10% 30vw;
     min-width: 300px;
 }
 
@@ -77,38 +76,79 @@ footer {
     height: 160px;
 }
 
-#imageDiv {
-    width: 200%;
+.colorSquares {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    top: 190px;
+    transform: translateY(30px);
 }
 
 #goldSquare {
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    top: 210px;
     left: 150px;
     background-color: gold;
+    transition: 2.2s all ease;
 }
 
 #tomatoSquare {
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    top: 210px;
     left: 170px;
     background-color: tomato;
+    transition: 1.5s all ease;
 }
 
 #blueSquare {
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    top: 210px;
     left: 190px;
     background-color: steelblue;
+    transition: 0.8s all ease;
 }
 
-div>img {
+.flex-container {
+    flex-direction: column;
+    width: 100vw;
+}
+
+.gallery-flex {
+    display: flex;
+}
+
+.gallery-wrap {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-300px);
+    transition: 1s all ease;
+}
+
+.gallery {
+    min-width: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+img {
     width: 200px;
-    height: 200px;
+}
+
+a + p {
+    text-align: center;
+}
+
+.container {
+    margin: auto;
+    max-width: 700px;
+    width: 80vw;
+    line-height: 2;
+}
+
+form>span {
+    margin-right: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex--column {
+    flex-direction: column;
 }

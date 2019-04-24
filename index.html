@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Major+Mono+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
     <link type="text/css" rel="stylesheet" href="css/style.css">
 
@@ -19,46 +20,85 @@
         <h2>Portfolio</h2>
         <p>
             <a href="class.html" target="blank">Class Showcase</a><BR>
-            <a href="web-store.html" target="blank">Web Store Hack-a-thon</a><BR>
-            <a href="demo.html" target="blank">Demo Day Project</a><BR>
+            <a href="web-store.html" target="blank">Hack-a-thon</a><BR>
+            <a href="demo.html" target="blank">Demo Day</a><BR>
             <a href="https://jammming.netlify.com/" target="blank">Spotify API web app</a><BR>
             <a href="https://reaction-game-js.netlify.com/" target="blank">JS Reaction Game</a><BR>
             <a href="http://www.free4m.com" target="blank">Fine Art & Design</a>
         </p>
     </div>
 
-    <div id="goldSquare"></div>
-    <div id="tomatoSquare"></div>
-    <div id="blueSquare"></div>
+    <div id="goldSquare" class="colorSquares"></div>
+    <div id="tomatoSquare" class="colorSquares"></div>
+    <div id="blueSquare" class="colorSquares"></div>
 
     <div id="contact">
         <h2>Contact</h2>
         <hr>
-        <p><a href="mailto:free4m@gmail.com">free4m@gmail.com</a>
-            <p><a href="https://www.linkedin.com/in/zhanaliner/" target="blank">LinkedIn</a></p>
-            <p>323.481.2923</p>
+        <p><a href="mailto:free4m@gmail.com">free4m@gmail.com</a><BR>
+            <a href="https://www.linkedin.com/in/zhanaliner/" target="blank">LinkedIn</a><BR>
+            323.481.2923<BR>
+            <p>
+                <a href="contact/contact.html">Message form</a>
+            </p>
+        </p>
     </div>
-
     <header>
         <h1>Zhana Liner</h1>
         <h2>Web Developer <span style="color:tomato">|</span> <i>Visual Artist</i></h2>
         <p> . . . . . </p>
-        <p><a href="blog/blog.html">Micro Blog</a></p>
     </header>
-    <main>
-        <div>
-            <img src="images/Jammming.png" alt="Spotify API web app">
-            <img src="images/react-game.png" alt="JavaScript Reaction Game">
-            <img src="images/Moroccan.jpg" alt="Portrait | Morroccan Wedding">
-            <img src="https://picsum.photos/200?random=5" alt="random image">
-            <img src="https://picsum.photos/200?random=6" alt="random image">
-            <img src="https://picsum.photos/200?random=7" alt="random image">
-            <img src="https://picsum.photos/200?random=8" alt="random image">
-            <img src="https://picsum.photos/200?random=9" alt="random image">
+    <main class="flex-container">
+
+        <div class="gallery-flex">
+            <div class="gallery-wrap">
+                <div class="gallery" data-title="some">
+                    <a href="" target="_blank"><img src="images/Jammming.png" alt="Spotify API web app"></a>
+                    <p>Jammming web app | Spotify API, React, JS</p>
+                </div>
+            </div>
+            <div class="gallery-wrap">
+                <div class="gallery" data-title="some">
+                    <a href="" target="_blank"><img src="images/react-game.png" alt="JavaScript Reaction Game"></a>
+                    <p>Reaction Game | JS</p>
+                </div>
+            </div>
+            <div class="gallery-wrap">
+                <div class="gallery" data-title="some">
+                    <a href="" target="_blank"><img src="images/Moroccan.jpg" alt="Portrait | Morroccan Wedding"></a>
+                    <p>Portraits | Watercolor, charcoal, pencil</p>
+                </div>
+            </div>
+            <div class="gallery-wrap">
+                <div class="gallery" data-title="some">
+                    <a href="" target="_blank"><img src="https://picsum.photos/200?random=2" alt="random image"></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-wrap">
+                <div class="gallery" data-title="some">
+                    <a href="" target="_blank"><img src="https://picsum.photos/200?random=3" alt="random image"></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-wrap">
+                <div class="gallery" data-title="some">
+                    <a href="" target="_blank"><img src="https://picsum.photos/200?random=4" alt="random image"></a>
+                    <p></p>
+                </div>
+            </div>
+            <div class="gallery-wrap">
+                <div class="gallery" data-title="some">
+                    <a href="" target="_blank"><img src="https://picsum.photos/200?random=5" alt="random image"></a>
+                    <p></p>
+                </div>
+            </div>
         </div>
+
         <div id="about">
+            <p><a href="blog/blog.html">Micro Blog</a></p>
             <h2>About Me</h2>
-            <p>I am an experienced portraitist, graphic designer, CAD sculptor, and most recently search analyst and web
+            <p>I am an experienced visual artist, search analyst and web
                 developer. I have worked in visual art-related roles most of my career, some required modest coding
                 skills.</p>
 
