@@ -1,4 +1,4 @@
-/* Whole document styles */
+/* Whole document styles entire website */
 
 body {
     padding: 0;
@@ -22,7 +22,7 @@ a:active {
     color: white;
 }
 
-/* Element and sections styles */
+/* Element styles */
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -36,6 +36,8 @@ h2 {
     line-height: 0;
 }
 
+/* Main sections styles */
+
 header {
     /* background: url("https://picsum.photos/id/415/5184/3456?random=1") no-repeat fixed; */
     background-size: 100%;
@@ -45,8 +47,19 @@ header {
 }
 
 footer {
+    padding: 50px;
     text-align: center;
-    margin-bottom: 40px;
+}
+
+header > p > a {
+    line-height: 0;
+    font-size: 24pt;
+    color: steelblue;
+    opacity: 0.6;
+}
+
+div > h1 {
+    padding-top: 20px;
 }
 
 /* Specific id styles (in decending order of appearence on page) */
