@@ -1,10 +1,12 @@
+/* Whole document styles */
+
 body {
     padding: 0;
     margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 11pt;
     background: url("https://picsum.photos/id/415/5184/3456?random=1") no-repeat fixed;
-    background-size: 100vw;
+    background-size: cover;
 }
 
 a:link,
@@ -20,6 +22,8 @@ a:active {
     color: white;
 }
 
+/* Element and sections styles */
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 30pt;
@@ -30,12 +34,6 @@ h2 {
     font-size: 16pt;
     color: grey;
     line-height: 0;
-}
-
-hr {
-    border: none;
-    border-top: 1px dotted steelblue;
-    height: 5px;
 }
 
 header {
@@ -51,10 +49,7 @@ footer {
     margin-bottom: 40px;
 }
 
-#about {
-    padding: 0 30vw 10% 30vw;
-    min-width: 300px;
-}
+/* Specific id styles (in decending order of appearence on page) */
 
 #portfolio {
     background-color: white;
@@ -78,6 +73,12 @@ footer {
     width: 160px;
     height: 160px;
     z-index: 3;
+}
+
+#contact hr {
+    border: none;
+    border-top: 1px dotted steelblue;
+    height: 5px;
 }
 
 .colorSquares {
@@ -106,6 +107,20 @@ footer {
     transition: 0.8s all ease;
 }
 
+#about {
+    padding: 0 30vw 10% 30vw;
+    min-width: 300px;
+}
+
+/* Gallery container and styles */
+
+.container {
+    margin: auto;
+    max-width: 700px;
+    width: 80vw;
+    line-height: 2;
+}
+
 .flex-container {
     flex-direction: column;
     width: 100vw;
@@ -116,9 +131,12 @@ footer {
     display: flex;
 }
 
+.gallery-flex img {
+    width: 200px;
+}
+
 .gallery-wrap {
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
     transform: translateY(-300px);
@@ -131,20 +149,11 @@ footer {
     position: relative;
 }
 
-img {
-    width: 200px;
-}
-
 a + p {
     text-align: center;
 }
 
-.container {
-    margin: auto;
-    max-width: 700px;
-    width: 80vw;
-    line-height: 2;
-}
+/* Form styles */
 
 form>span {
     margin-right: 20px;
