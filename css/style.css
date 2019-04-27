@@ -36,10 +36,13 @@ h2 {
     line-height: 0;
 }
 
+li {
+    list-style: none;
+}
+
 /* Main sections styles */
 
-header {
-    /* background: url("https://picsum.photos/id/415/5184/3456?random=1") no-repeat fixed; */
+#main {
     background-size: 100%;
     text-align: center;
     height: 500px;
@@ -162,15 +165,7 @@ div > h1 {
     position: relative;
 }
 
-a + p {
-    text-align: center;
-}
-
-/* Form styles */
-
-form>span {
-    margin-right: 20px;
-}
+/* Contact form */
 
 .flex {
     display: flex;
@@ -178,4 +173,44 @@ form>span {
 
 .flex--column {
     flex-direction: column;
+}
+
+form>span {
+    margin-right: 20px;
+}
+
+/* Nav bar blog */
+
+nav>ul {
+    /* margin: 0; */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
+#dropdown {
+    display: none;
+}
+
+li:focus #dropdown {
+    display: block;
+}
+
+li:hover #dropdown {
+    display: block;
+}
+
+/* #blog-nav {
+    position: fixed;
+} */
+
+/* Misc styles */
+
+a + p {
+    text-align: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
