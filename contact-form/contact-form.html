@@ -17,7 +17,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
 
-    <title>Contact</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
+
+
+    <title>Zhana Liner Savvy Coders </title>
+
 </head>
 
 <body>
@@ -45,7 +52,8 @@
         <p><a href="mailto:free4m@gmail.com">free4m @ gmail</a><BR>
             323.481.2923<BR>
             <p>
-                <a href="../index.html" target="blank">Home page</a>
+                <a href="../index.html">Home page</a><BR>
+                <a href="../blog/blog.html">Blog</a>
             </p>
         </p>
     </div>
@@ -59,20 +67,22 @@
 
         <form action="https://formspree.io/free4m@gmail.com" method="POST">
 
-            <span>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="userName" />
-            </span>
+            <div class="flex flex--justify">
+                <span>
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="userName" />
+                </span>
 
-            <span>
-                <label for="userEmail">Your Email:</label>
-                <input type="email" name="userEmail" id="userEmail" placeholder="user@example.com" />
-            </span>
+                <span>
+                    <label for="userEmail">Your Email:</label>
+                    <input type="email" name="userEmail" id="userEmail" placeholder="user@example.com" />
+                </span>
 
-            <span>
-                <label for="phone">Your Phone:</label>
-                <input type="tel" name="userPhone" id="phone">
-            </span>
+                <span>
+                    <label for="phone">Your Phone:</label>
+                    <input type="tel" name="userPhone" id="phone">
+                </span>
+            </div>
 
             <div class="flex flex--column">
                 <label for="message">Your Message:</label>
@@ -116,8 +126,12 @@
         </form>
 
     </div>
-    
+
     <footer>
+        <p>
+            <a href="https://www.linkedin.com/in/zhanaliner/" target="blank"><i class="fab fa-linkedin"></i></a> . . .
+            <a href="https://github.com/free4mOriginal" target="blank"><i class="fab fa-github"></i></a>
+        </p>
         <p>&copy; 2019 ZK</p>
     </footer>
 
