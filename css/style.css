@@ -1,12 +1,8 @@
 /* Whole document styles entire website */
 
 body {
-    padding: 0;
-    margin: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 11pt;
-    background: url("https://picsum.photos/id/415/5184/3456?random=1") no-repeat fixed;
-    background-size: cover;
 }
 
 a:link,
@@ -20,6 +16,52 @@ a:hover,
 a:active {
     background-color: tomato;
     color: white;
+}
+
+/* Named page styles (backgrounds and other page specific styles) */
+
+.index {
+    padding: 0;
+    margin: 0;
+    background: url("https://picsum.photos/id/415/5184/3456?random=1") no-repeat fixed;
+    background-size: cover;
+}
+
+/* Blog page styles */
+
+.blog {
+    padding: 0;
+    margin: -20px 0 0 0;
+    /* background: url("https://picsum.photos/id/146/5184/3456") no-repeat fixed; */
+    background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.blog {
+    color: white;
+}
+
+/* Contact form styles */
+
+.contact-form {
+    padding: 0;
+    margin: -20px 0 0 0;
+    background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.contact-form input, select, textarea {
+    opacity: 0.3;
+}
+
+.contact-form #marketing, input[type="submit"], input[type="reset"], input[type="radio"]  {
+    opacity: 0.7;
+}
+
+.contact-form > .container {
+    color: lightgray;
 }
 
 /* Element styles */
@@ -77,7 +119,7 @@ div > h1 {
     position: fixed;
     left: 0;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.6;
     width: 160px;
     height: 160px;
     z-index: 2;
@@ -89,7 +131,7 @@ div > h1 {
     position: fixed;
     right: 0;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.6;
     width: 160px;
     height: 160px;
     z-index: 3;
@@ -178,6 +220,7 @@ div > h1 {
 
 .flex--justify {
     justify-content: space-between;
+    align-items: center;
 }
 
 .flex--column {
@@ -207,6 +250,17 @@ li:focus #dropdown {
 
 li:hover #dropdown {
     display: block;
+}
+
+/* Blog page */
+
+#blog-header-image {
+    background-image: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Misc styles */
