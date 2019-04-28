@@ -23,7 +23,7 @@ a:active {
 .index {
     padding: 0;
     margin: 0;
-    background: url("https://picsum.photos/id/415/5184/3456?random=1") no-repeat fixed;
+    background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed;
     background-size: cover;
 }
 
@@ -32,14 +32,23 @@ a:active {
 .blog {
     padding: 0;
     margin: -20px 0 0 0;
-    /* background: url("https://picsum.photos/id/146/5184/3456") no-repeat fixed; */
     background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed;
     background-size: cover;
-    height: 100vh;
 }
 
-.blog {
-    color: white;
+.blog-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    border: thin white solid;
+    padding: 5px;
+    margin: 10px;
 }
 
 /* Contact form styles */
@@ -179,8 +188,7 @@ div > h1 {
 
 .container {
     margin: auto;
-    max-width: 600px;
-    width: 80vw;
+    max-width: 800px;
     line-height: 2;
 }
 
@@ -199,9 +207,6 @@ div > h1 {
 }
 
 .gallery-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     transform: translateY(-300px);
     transition: 1s all ease;
 }
@@ -209,7 +214,14 @@ div > h1 {
 .gallery {
     min-width: 0;
     overflow: hidden;
-    position: relative;
+}
+
+.gallery>a, .gallery>a:visited {
+    color: black;
+}
+
+.gallery>a:hover {
+    background: none;
 }
 
 /* Contact form */
@@ -265,7 +277,7 @@ li:hover #dropdown {
 
 /* Misc styles */
 
-a + p {
+a, a + p {
     text-align: center;
 }
 
