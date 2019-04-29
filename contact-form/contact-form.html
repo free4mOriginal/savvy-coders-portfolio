@@ -64,19 +64,23 @@
 
         <div class="container">
 
-            <h1>Contact</h1>
+            <h1 style="display: flex; align-items: center;justify-content: space-between">
+                Contact
+                <div id="profile">
+                </div>
+            </h1>
 
             <form action="https://formspree.io/free4m@gmail.com" method="POST">
 
                 <div class="flex flex--justify">
                     <span>
                         <label for="name">Your Name:</label>
-                        <input type="text" id="name" name="userName" required/>
+                        <input type="text" id="name" name="userName" required />
                     </span>
 
                     <span>
                         <label for="userEmail">Your Email:</label>
-                        <input type="email" name="userEmail" id="userEmail" placeholder="user@example.com" required/>
+                        <input type="email" name="userEmail" id="userEmail" placeholder="user@example.com" required />
                     </span>
 
                     <span>
@@ -91,7 +95,7 @@
                 </div>
 
                 <div class="flex flex--justify">
-                    <p>What is it about?</p>
+                    <p>What is it about --> </p>
                     <span>
                         <input type="radio" name="subject" value="professional" id="pro" checked="checked">
                         <label for="pro">Project or job</label>

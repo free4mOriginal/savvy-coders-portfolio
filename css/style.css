@@ -67,7 +67,11 @@ figure>a>img {
 }
 
 .contact-form input, select, textarea {
-    opacity: 0.3;
+    opacity: 0.4;
+}
+
+.contact-form textarea {
+    row:
 }
 
 .contact-form #marketing, input[type="submit"], input[type="reset"], input[type="radio"]  {
@@ -118,34 +122,34 @@ header > p > a {
     line-height: 1.2;
     font-size: 24pt;
     color: steelblue;
-    opacity: 0.6;
+    /* opacity: 0.6; */
 }
 
 div > h1 {
-    padding-top: 20px;
+    padding-top: 120px;
 }
 
 /* Specific id styles (in decending order of appearence on page) */
 
 #portfolio {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.6);
     padding: 20px;
     position: fixed;
     left: 0;
     top: 0;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     width: 160px;
     height: 160px;
     z-index: 2;
 }
 
 #contact {
-    background-color: white;
+    background: rgba(255, 255, 255, 0.6);
     padding: 20px;
     position: fixed;
     right: 0;
     top: 0;
-    opacity: 0.6;
+    /* opacity: 0.6; */
     width: 160px;
     height: 160px;
     z-index: 3;
@@ -155,6 +159,16 @@ div > h1 {
     border: none;
     border-top: 1px dotted steelblue;
     height: 5px;
+}
+
+#profile {
+    width: 120px;
+    height: 120px;
+    margin-left: -50px;
+    border-radius: 100px;
+    background-image: url("../images/profile.jpg");
+    background-size: cover;
+    border: 5px solid white; 
 }
 
 .colorSquares {
@@ -193,7 +207,8 @@ div > h1 {
 
 .container {
     margin: auto;
-    max-width: 800px;
+    min-width: 200px;
+    max-width: 750px;
     line-height: 2;
 }
 
@@ -238,6 +253,7 @@ div > h1 {
 .flex--justify {
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .flex--column {
@@ -246,6 +262,10 @@ div > h1 {
 
 form>span {
     margin-right: 20px;
+}
+
+input {
+    max-width: 200px;
 }
 
 /* Nav bar blog */
@@ -289,10 +309,6 @@ a, a + p {
 ul {
     margin: 0;
     padding: 0;
-}
-
-input {
-    max-width: 200px;
 }
 
 p {
