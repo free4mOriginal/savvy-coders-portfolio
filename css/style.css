@@ -51,6 +51,11 @@ figure {
     margin: 10px;
 }
 
+figure>a>img {
+    width: 200px;
+    height: 200px;
+}
+
 /* Contact form styles */
 
 .contact-form {
@@ -93,11 +98,11 @@ li {
 
 /* Main sections styles */
 
-#main {
-    background-size: 100%;
+#mainHeader {
     text-align: center;
-    height: 500px;
+    /* height: 500px; */
     padding-top: 220px;
+    padding-bottom: 90px;
 }
 
 footer {
@@ -180,7 +185,7 @@ div > h1 {
 }
 
 #about {
-    padding: 0 30vw 10% 30vw;
+    padding: 0 30vw 0 30vw;
     min-width: 300px;
 }
 
@@ -206,8 +211,8 @@ div > h1 {
     width: 200px;
 }
 
-.gallery-wrap {
-    transform: translateY(-300px);
+.gallery-slide {
+    transform: translateY(-100px);
     transition: 1s all ease;
 }
 
