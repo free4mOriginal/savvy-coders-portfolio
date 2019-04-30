@@ -345,6 +345,29 @@ p {
     line-height: 1.5;
 }
 
+@media screen and (max-width: 320px) {
+    #portfolio {
+        background: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 120px;
+        height: 160px;
+        z-index: 2;
+    }
+    
+    #contact {
+        background: rgba(255, 255, 255, 0.6);
+        padding: 20px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 120px;
+        height: 160px;
+        z-index: 3;
+    }
+}
 /* @media */
 /* 
 @media screen and (min-width: 960px) {
