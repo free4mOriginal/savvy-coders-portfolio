@@ -3,6 +3,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 11pt;
+    padding: 0;
+    margin: 0;
 }
 
 a:link,
@@ -18,20 +20,46 @@ a:active {
     color: white;
 }
 
-/* Named page styles (backgrounds and other page specific styles) */
+/* Home page */
 
 .index {
-    padding: 0;
-    margin: 0;
     background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed;
     background-size: cover;
 }
 
-/* Blog page styles */
+#about {
+    padding: 0 30vw 0 30vw;
+    min-width: 250px;
+}
+
+/* Contact form */
+
+.contact-form {
+    background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.contact-form h1 {
+    color: white;
+}
+
+#profile {
+    position: fixed;
+    left: 180px;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    background-image: url("../images/profile.jpg");
+    background-size: cover;
+    border: 5px solid white;
+    z-index: 3;
+}
+
+/* Blog page */
 
 .blog {
-    padding: 0;
-    margin: -20px 0 0 0;
     background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed;
     background-size: cover;
 }
@@ -42,94 +70,11 @@ a:active {
     justify-content: space-around;
 }
 
-figure {
-    text-align: center;
-    font-style: italic;
-    font-size: smaller;
-    border: thin white solid;
-    padding: 5px;
-    margin: 10px;
-}
+/* Nav Bar */
 
-figure>a>img {
-    width: 200px;
+nav {
     height: 200px;
 }
-
-/* Contact form styles */
-
-.contact-form {
-    padding: 0;
-    margin: -20px 0 0 0;
-    background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
-    background-size: cover;
-    background-position-y: bottom;
-}
-
-.contact-form input, select, textarea {
-    opacity: 0.4;
-}
-
-.contact-form textarea {
-    row:
-}
-
-.contact-form #marketing, input[type="submit"], input[type="reset"], input[type="radio"]  {
-    opacity: 0.7;
-}
-
-.contact-form > .container {
-    color: lightgray;
-}
-
-/* Element styles */
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30pt;
-}
-
-h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16pt;
-    color: grey;
-    line-height: 0;
-}
-
-li {
-    list-style: none;
-}
-
-/* Main sections styles */
-
-#mainHeader {
-    text-align: center;
-    /* height: 500px; */
-    padding-top: 220px;
-    padding-bottom: 90px;
-}
-
-footer {
-    padding: 50px;
-    text-align: center;
-}
-
-footer p:first-child {
-    font-size: 18pt;
-}
-
-header > p > a {
-    line-height: 1.2;
-    font-size: 24pt;
-    color: steelblue;
-    /* opacity: 0.6; */
-}
-
-div > h1 {
-    padding-top: 120px;
-}
-
-/* Specific id styles (in decending order of appearence on page) */
 
 #portfolio {
     background: rgba(255, 255, 255, 0.6);
@@ -161,52 +106,133 @@ div > h1 {
     height: 5px;
 }
 
-#profile {
-    width: 120px;
-    height: 120px;
-    margin-left: -50px;
-    border-radius: 100px;
-    background-image: url("../images/profile.jpg");
-    background-size: cover;
-    border: 5px solid white; 
+figure {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    border: thin white solid;
+    padding: 5px;
+    margin: 10px;
 }
 
-.colorSquares {
+nav>figure {
+    font-style: inherit;
+}
+
+/* Nav ENDS */
+
+figure>a>img {
+    width: 200px;
+    height: 200px;
+}
+
+/* Color squares on left */
+
+#goldSquare {
     width: 10px;
     height: 10px;
     position: fixed;
-    top: 190px;
-    transform: translateY(30px);
-    z-index: 4;
-}
-
-#goldSquare {
-    left: 150px;
     background-color: gold;
+    left: 160px;
+    top: 200px;
+    transform: translateY(30px);
     transition: 2.2s all ease;
+    z-index: 999;
 }
 
 #tomatoSquare {
-    left: 170px;
+    width: 10px;
+    height: 10px;
+    position: fixed;
     background-color: tomato;
+    left: 180px;
+    top: 200px;
+    transform: translateY(30px);
     transition: 1.5s all ease;
+    z-index: 999;
 }
 
 #blueSquare {
-    left: 190px;
+    width: 10px;
+    height: 10px;
+    position: fixed;
     background-color: steelblue;
+    left: 200px;
+    top: 200px;
+    transform: translateY(30px);
     transition: 0.8s all ease;
+    z-index: 999;
 }
 
-#about {
-    padding: 0 30vw 0 30vw;
-    min-width: 300px;
+/* Color squares ENDS */
+
+
+/* Contact form styles */
+
+.contact-form input, select, textarea {
+    opacity: 0.4;
+}
+
+.contact-form textarea {
+    row:
+}
+
+.contact-form #marketing, input[type="submit"], input[type="reset"], input[type="radio"]  {
+    opacity: 0.7;
+}
+
+.contact-form > .container {
+    color: lightgray;
+}
+
+/* Element styles */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2, .navTitles {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    color: grey;
+    line-height: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* Main sections styles */
+
+#mainHeader {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+}
+
+footer p:first-child {
+    font-size: 18pt;
+}
+
+header > p > a {
+    line-height: 1.2;
+    font-size: 24pt;
+    color: steelblue;
+    /* opacity: 0.6; */
 }
 
 /* Gallery container and styles */
 
 .container {
     margin: auto;
+    padding: 20px;
     min-width: 200px;
     max-width: 750px;
     line-height: 2;
@@ -260,6 +286,10 @@ div > h1 {
     flex-direction: column;
 }
 
+.flex--end {
+    justify-content: flex-end;
+}
+
 form>span {
     margin-right: 20px;
 }
@@ -306,6 +336,10 @@ a, a + p {
     text-align: center;
 }
 
+p>a {
+    line-height: 1;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -314,3 +348,34 @@ ul {
 p {
     line-height: 1.5;
 }
+
+/* @media */
+/* 
+@media screen and (min-width: 960px) {
+    body {
+        display: grid;
+        grid-template-columns: 12rem auto;
+        grid-template-rows: min-content auto auto min-content;
+        grid-template-areas:
+            "navigation header"
+            "navigation main"
+            "navigation main"
+            "navigation footer";
+    }
+
+    nav {
+        grid-area: navigation;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    footer {
+        grid-area: footer;
+    }
+} */
