@@ -64,6 +64,11 @@ a:active {
     background-size: cover;
 }
 
+.blog footer>p {
+    color: white;
+    font-size: medium;
+}
+
 .blog-flex {
     display: flex;
     flex-wrap: wrap;
@@ -183,6 +188,11 @@ figure>a>img {
 
 .contact-form > .container {
     color: lightgray;
+}
+
+figure>span {
+    line-height: 0;
+    font-size: 1.6em;
 }
 
 /* Element styles */
@@ -347,24 +357,64 @@ p {
 
 @media screen and (max-width: 450px) {
     #portfolio {
-        background: rgba(255, 255, 255, 0.6);
-        padding: 20px;
-        position: fixed;
-        left: 0;
-        top: 0;
+        padding: 10px;
+        position: absolute;
         width: 120px;
-        height: 160px;
-        z-index: 2;
+        height: 180px;
+    }
+    #contact {
+        padding: 10px;
+        position: absolute;
+        width: 120px;
+        height: 180px;
+    }
+
+    #goldSquare {
+        left: 60px;
+        top: 190px;
+        position: absolute;
+    }
+    #tomatoSquare {
+        left: 80px;
+        top: 190px;
+        position: absolute;
+    }
+    #blueSquare {
+        left: 100px;
+        top: 190px;
+        position: absolute;
+    }
+
+    h2 {
+        font-size: unset;
+    }
+
+    .index {
+        background-position-x: center;
     }
     
-    #contact {
-        background: rgba(255, 255, 255, 0.6);
+    #about {
         padding: 20px;
-        position: fixed;
-        right: 0;
-        top: 0;
-        width: 120px;
-        height: 160px;
+        z-index: 999;
+    }
+
+    figure>span {
+        line-height: 0;
+        font-size: 1.6em;
+        margin-top: -5px;
+    }
+}
+
+/* Contact form profile picture */
+
+@media screen and (max-width: 540px) {
+    #profile {
+        position: absolute;
+        top: 180px;
+        left: -20px;
+        width: 70px;
+        height: 70px;
+        border: 3px solid white;
         z-index: 3;
     }
 }
