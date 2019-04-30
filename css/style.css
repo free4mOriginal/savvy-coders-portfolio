@@ -25,6 +25,7 @@ a:active {
 .index {
     background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed;
     background-size: cover;
+    background-position: center;
 }
 
 #about {
@@ -38,6 +39,7 @@ a:active {
     background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
     background-size: cover;
     background-position-y: bottom;
+    background-position: center;
 }
 
 .contact-form h1 {
@@ -62,9 +64,10 @@ a:active {
 .blog {
     background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed;
     background-size: cover;
+    background-position: center;
 }
 
-.blog footer>p {
+.blog footer>p, .contact-form footer>p {
     color: white;
     font-size: medium;
 }
@@ -355,7 +358,7 @@ p {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
     #portfolio {
         padding: 10px;
         position: absolute;
@@ -388,13 +391,9 @@ p {
     h2 {
         font-size: unset;
     }
-
-    .index {
-        background-position-x: center;
-    }
     
     #about {
-        padding: 20px;
+        padding: 20px 20px 80px 20px;
         z-index: 999;
     }
 
@@ -402,6 +401,10 @@ p {
         line-height: 0;
         font-size: 1.6em;
         margin-top: -5px;
+    }
+
+    .blog, .contact-form {
+        background-position: center;
     }
 }
 
