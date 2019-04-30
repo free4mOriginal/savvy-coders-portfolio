@@ -345,7 +345,7 @@ p {
     line-height: 1.5;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
     #portfolio {
         background: rgba(255, 255, 255, 0.6);
         padding: 20px;
