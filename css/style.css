@@ -217,10 +217,6 @@ footer {
     text-align: center;
 }
 
-footer p:first-child {
-    font-size: 18pt;
-}
-
 header > p > a {
     line-height: 1.2;
     font-size: 24pt;
