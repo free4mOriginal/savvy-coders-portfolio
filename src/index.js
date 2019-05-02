@@ -1,7 +1,7 @@
 let name = prompt('Your name?');
 
 function checkName(nameStr) {
-    if(nameStr === '') {
+    if(!nameStr) {
         nameStr = prompt('No really...');
         nameStr = checkName(nameStr);
     }
@@ -10,4 +10,16 @@ function checkName(nameStr) {
 
 name = checkName(name);
 
-document.querySelector('h1').innerHTML = `Hello ${name}, I am Zhana Liner`;
+let lastName = prompt('Your last name?');
+
+function checkLastName(nameStr) {
+    if(!nameStr) {
+        nameStr = prompt('No really...');
+        nameStr = checkName(nameStr);
+    }
+    return nameStr;
+}
+
+lastName = checkLastName(lastName);
+
+document.querySelector('h1').textContent = `Hello ${name} ${lastName}, I am Zhana Liner`;
