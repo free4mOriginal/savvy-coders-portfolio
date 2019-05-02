@@ -181,10 +181,6 @@ figure>a>img {
     opacity: 0.4;
 }
 
-.contact-form textarea {
-    row:
-}
-
 .contact-form #marketing, input[type="submit"], input[type="reset"], input[type="radio"]  {
     opacity: 0.7;
 }
