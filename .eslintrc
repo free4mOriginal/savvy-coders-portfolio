@@ -227,11 +227,11 @@
         "prefer-spread": "off",
         "prefer-template": "off",
         "quote-props": "error",
-        "quotes": [
-            "error",
-            "single",
-            "avoid-escape"
-        ],
+        // "quotes": [
+        //     // "error",
+        //     // "single",
+        //     "avoid-escape"
+        // ],
         "radix": [
             "error",
             "always"
