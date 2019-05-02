@@ -1,25 +1,6 @@
-let name = prompt('Your name?');
+import Navigation from "../components/Navigation";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import Footer from "../components/Footer";
 
-function checkName(nameStr) {
-    if(!nameStr) {
-        nameStr = prompt('No really...');
-        nameStr = checkName(nameStr);
-    }
-    return nameStr;
-}
-
-name = checkName(name);
-
-let lastName = prompt('Your last name?');
-
-function checkLastName(nameStr) {
-    if(!nameStr) {
-        nameStr = prompt('No really...');
-        nameStr = checkName(nameStr);
-    }
-    return nameStr;
-}
-
-lastName = checkLastName(lastName);
-
-document.querySelector('h1').textContent = `Hello ${name} ${lastName}, I am Zhana Liner`;
+console.log(Footer);
