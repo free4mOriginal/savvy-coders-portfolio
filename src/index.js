@@ -3,4 +3,16 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 
-console.log(Footer);
+//This is a GETTER;
+
+// let initialHTML = document.body.innerHTML;
+
+// This is a SETTER;
+document.querySelector('div').innerHTML = `
+    ${Navigation}
+    ${Header}
+    ${Main}
+    ${Footer}
+    `;
+
+// ${initialHTML}
