@@ -6,7 +6,8 @@ export default `<main>
 
         <div class="gallery-slide">
             <figure>
-                <a href="https://jammming.netlify.com/" target="_blank"><img src="images/Jammming.png"
+                <a href="https://jammming.netlify.com/" target="_blank">
+                <img src="images/Jammming.png"
                         alt="Spotify API web app"></a>
                 <figcaption>Jammming web app<BR>Spotify
                     API, React, JS</figcaption>
@@ -34,51 +35,6 @@ export default `<main>
     </div>
 
 </div>
-
-<!-- <div class="gallery-flex">
-    <div class="gallery-slide">
-        <div class="gallery">
-            <a href="https://jammming.netlify.com/" target="_blank"><img src="images/Jammming.png" alt="Spotify API web app"></a>
-            <a href="https://jammming.netlify.com/" target="_blank"><p>Jammming web app<BR>Spotify API, React, JS</p></a>
-        </div>
-    </div>
-    <div class="gallery-slide">
-        <div class="gallery">
-            <a href="https://reaction-game-js.netlify.com/" target="_blank"><img src="images/react-game.png" alt="JavaScript Reaction Game"></a>
-            <p>JS Reaction Game</p>
-        </div>
-    </div>
-    <div class="gallery-slide">
-        <div class="gallery">
-            <a href="http://www.free4m.com" target="_blank"><img src="images/Moroccan.jpg" alt="Portrait | Morroccan Wedding"></a>
-            <p>Portraits<BR>Watercolor, charcoal</p>
-        </div>
-    </div>
-    <div class="gallery-slide">
-        <div class="gallery">
-            <a href="" target="_blank"><img src="https://picsum.photos/200?random=2" alt="random image"></a>
-            <p></p>
-        </div>
-    </div>
-    <div class="gallery-slide">
-        <div class="gallery">
-            <a href="" target="_blank"><img src="https://picsum.photos/200?random=3" alt="random image"></a>
-            <p></p>
-        </div>
-    </div>
-    <div class="gallery-slide">
-        <div class="gallery">
-            <a href="" target="_blank"><img src="https://picsum.photos/200?random=4" alt="random image"></a>
-            <p></p>
-        </div>
-    </div>
-    <div class="gallery-slide">
-        <div class="gallery">
-            <a href="" target="_blank"><img src="https://picsum.photos/200?random=5" alt="random image"></a>
-            <p></p>
-        </div>
-    </div>
-</div> -->
 
 <div id="about">
     <h2>About Me</h2>
