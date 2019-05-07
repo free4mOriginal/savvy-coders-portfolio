@@ -1,4 +1,5 @@
-export default `        <nav class="flex flex--justify">
+export default function Navigation() {
+    return `<nav class="flex flex--justify">
 <div id="squares">
     <div id="goldSquare"></div>
     <div id="tomatoSquare"></div>
@@ -29,3 +30,4 @@ export default `        <nav class="flex flex--justify">
     </p>
 </figure>
 </nav>`;
+}

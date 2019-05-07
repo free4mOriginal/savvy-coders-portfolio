@@ -1,4 +1,5 @@
-export default `<main>
+export default function Main() {
+    return `<main>
 
 <div class="container">
 
@@ -51,3 +52,4 @@ export default `<main>
         integral part of a team.</p>
 </div>
 </main>`;
+}
