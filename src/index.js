@@ -16,10 +16,6 @@ const state = {
     }
 };
 
-console.log(state);
-
-
-// This is a SETTER;
 document.querySelector('#root').innerHTML = `
     ${Navigation(state)}
     ${Header(state)}
@@ -27,4 +23,9 @@ document.querySelector('#root').innerHTML = `
     ${Footer(state)}
     `;
 
-// ${initialHTML}
+// Create event listener for square to load
+function squareTransition() {
+    document.getElementById("goldSquare").style.transform = "rotate(20deg)";
+};
+
+document.getElementById('goldSquare').addEventListener('click', () => squareTransition());

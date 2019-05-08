@@ -1,5 +1,4 @@
-export default function Navigation() {
-    return `<nav class="flex flex--justify">
+export default (state) => `<nav class="flex flex--justify">
 <div id="squares">
     <div id="goldSquare"></div>
     <div id="tomatoSquare"></div>
@@ -30,4 +29,3 @@ export default function Navigation() {
     </p>
 </figure>
 </nav>`;
-}
