@@ -143,8 +143,8 @@ figure>a>img {
     background-color: gold;
     left: 160px;
     top: 200px;
-    transform: translateY(30px);
-    transition: 2.2s all ease;
+    /* transform: translateY(30px); */
+    /* transition: 2.2s all ease; */
     z-index: 999;
 }
 
@@ -155,8 +155,8 @@ figure>a>img {
     background-color: tomato;
     left: 180px;
     top: 200px;
-    transform: translateY(30px);
-    transition: 1.5s all ease;
+    /* transform: translateY(30px);
+    transition: 1.5s all ease; */
     z-index: 999;
 }
 
@@ -167,8 +167,8 @@ figure>a>img {
     background-color: steelblue;
     left: 200px;
     top: 200px;
-    transform: translateY(30px);
-    transition: 0.8s all ease;
+    /* transform: translateY(30px);
+    transition: 0.8s all ease; */
     z-index: 999;
 }
 
@@ -255,11 +255,6 @@ header > p > a {
 
 .gallery-flex img {
     width: 200px;
-}
-
-.gallery-slide {
-    transform: translateY(-100px);
-    transition: 1s all ease;
 }
 
 .gallery {

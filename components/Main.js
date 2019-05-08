@@ -3,8 +3,6 @@ export default (state) => `<main>
 <div class="container">
 
     <div class="blog-flex">
-
-        <div class="gallery-slide">
             <figure>
                 <a href="https://jammming.netlify.com/" target="_blank">
                 <img src="${state.images.jammmingIMG}"
@@ -12,26 +10,16 @@ export default (state) => `<main>
                 <figcaption>Jammming web app<BR>Spotify
                     API, React, JS</figcaption>
             </figure>
-        </div>
-
-        <div class="gallery-slide">
             <figure>
                 <a href="https://reaction-game-js.netlify.com/" target="_blank"><img
                         src="${state.images.reactionGame}" alt="JavaScript Reaction Game"></a>
                 <figcaption>JS Reaction Game</figcaption>
             </figure>
-
-        </div>
-
-        <div class="gallery-slide">
             <figure>
                 <a href="http://www.free4m.com" target="_blank"><img src="${state.images.portraits}"
                         alt="Portrait | Morroccan Wedding"></a>
                 <figcaption>Portraits<BR>Watercolor, charcoal</figcaption>
             </figure>
-
-        </div>
-
     </div>
 
 </div>

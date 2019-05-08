@@ -23,9 +23,20 @@ document.querySelector('#root').innerHTML = `
     ${Footer(state)}
     `;
 
-// Create event listener for square to load
-function squareTransition() {
-    document.getElementById("goldSquare").style.transform = "rotate(20deg)";
+// Squares transitions function:
+
+function transitions() {
+    document.getElementById("goldSquare").style.transform = "translateY(30px)";
+    document.getElementById("goldSquare").style.transition = "2.1s all ease";
+
+    document.getElementById("tomatoSquare").style.transform = "translateY(30px)";
+    document.getElementById("tomatoSquare").style.transition = "1.4s all ease";
+
+    document.getElementById("blueSquare").style.transform = "translateY(30px)";
+    document.getElementById("blueSquare").style.transition = "0.7s all ease";
+
+    document.querySelector('div.blog-flex').style.transform = "translateY(-100px)";
+    document.querySelector('div.blog-flex').style.transition = "1.2s all ease";
 };
 
-document.getElementById('goldSquare').addEventListener('click', () => squareTransition());
+setTimeout(transitions, 0);
