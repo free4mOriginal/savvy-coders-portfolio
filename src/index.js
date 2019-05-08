@@ -7,13 +7,14 @@ import jammmingIMG from '../images/Jammming.png';
 import reactionGame from '../images/react-game.png';
 import portraits from '../images/Moroccan.jpg';
 
-const state = {};
-state.title = "Zhana Liner";
-
-state.images = {}
-state.images.jammmingIMG = jammmingIMG;
-state.images.reactionGame = reactionGame;
-state.images.portraits = portraits;
+const state = {
+    "title": "Zhana Liner",
+    "images": {
+        "jammmingIMG": jammmingIMG,
+        "reactionGame": reactionGame,
+        "portraits": portraits,
+    }
+};
 
 console.log(state);
 
