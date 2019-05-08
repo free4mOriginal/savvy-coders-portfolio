@@ -1,6 +1,6 @@
-export default function Header() {
+export default function Header(state) {
     return `<header id="mainHeader">
-<h1>Zhana Liner</h1>
+<h1>${state.title}</h1>
 <h2>Web Developer <span style="color:tomato">|</span> <i>Visual Artist</i></h2>
 <BR>
 <p>

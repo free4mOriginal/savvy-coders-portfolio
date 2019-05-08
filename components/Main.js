@@ -1,4 +1,4 @@
-export default function Main() {
+export default function Main(state) {
     return `<main>
 
 <div class="container">
@@ -8,7 +8,7 @@ export default function Main() {
         <div class="gallery-slide">
             <figure>
                 <a href="https://jammming.netlify.com/" target="_blank">
-                <img src="images/Jammming.png"
+                <img src="${state.images.jammmingIMG}"
                         alt="Spotify API web app"></a>
                 <figcaption>Jammming web app<BR>Spotify
                     API, React, JS</figcaption>
@@ -18,7 +18,7 @@ export default function Main() {
         <div class="gallery-slide">
             <figure>
                 <a href="https://reaction-game-js.netlify.com/" target="_blank"><img
-                        src="images/react-game.png" alt="JavaScript Reaction Game"></a>
+                        src="${state.images.reactionGame}" alt="JavaScript Reaction Game"></a>
                 <figcaption>JS Reaction Game</figcaption>
             </figure>
 
@@ -26,7 +26,7 @@ export default function Main() {
 
         <div class="gallery-slide">
             <figure>
-                <a href="http://www.free4m.com" target="_blank"><img src="images/Moroccan.jpg"
+                <a href="http://www.free4m.com" target="_blank"><img src="${state.images.portraits}"
                         alt="Portrait | Morroccan Wedding"></a>
                 <figcaption>Portraits<BR>Watercolor, charcoal</figcaption>
             </figure>

@@ -3,12 +3,27 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
 
+import jammmingIMG from '../images/Jammming.png';
+import reactionGame from '../images/react-game.png';
+import portraits from '../images/Moroccan.jpg';
+
+const state = {};
+state.title = "Zhana Liner";
+
+state.images = {}
+state.images.jammmingIMG = jammmingIMG;
+state.images.reactionGame = reactionGame;
+state.images.portraits = portraits;
+
+console.log(state);
+
+
 // This is a SETTER;
 document.querySelector('#root').innerHTML = `
-    ${Navigation()}
-    ${Header()}
-    ${Main()}
-    ${Footer()}
+    ${Navigation(state)}
+    ${Header(state)}
+    ${Main(state)}
+    ${Footer(state)}
     `;
 
 // ${initialHTML}
