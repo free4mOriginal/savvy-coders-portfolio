@@ -35,7 +35,7 @@ a:active {
 
 /* Contact form */
 
-.contact-form {
+#contact-form {
     background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
     background-size: cover;
     background-position-y: bottom;
@@ -108,7 +108,7 @@ nav {
     z-index: 3;
 }
 
-#contact hr {
+hr {
     border: none;
     border-top: 1px dotted steelblue;
     height: 5px;
@@ -117,7 +117,8 @@ nav {
 figure {
     text-align: center;
     font-style: italic;
-    font-size: smaller;
+    font-size: 10pt;
+    line-height: inherit;
     border: thin white solid;
     padding: 5px;
     margin: 10px;
@@ -189,10 +190,10 @@ figure>a>img {
     color: lightgray;
 }
 
-figure>span {
+/* figure>span {
     line-height: 0;
     font-size: 1.6em;
-}
+} */
 
 /* Element styles */
 
@@ -240,7 +241,7 @@ header > p > a {
     padding: 20px;
     min-width: 200px;
     max-width: 750px;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 .flex-container {

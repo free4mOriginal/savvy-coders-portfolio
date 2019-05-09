@@ -1,6 +1,4 @@
-export default (state) => `<div class="contact-form">
-
-<div class="container">
+export default (state) => `<div class="container">
 
     <form action="https://formspree.io/free4m@gmail.com" method="POST">
 
@@ -62,7 +60,5 @@ export default (state) => `<div class="contact-form">
             </div>
         </div>
     </form>
-
-</div>
 
 </div>`;

@@ -7,10 +7,9 @@ export default (state) => `<nav class="flex flex--justify">
 
 <figure id="portfolio">
     <p class="navTitles">Portfolio</p>
+    <hr>
     <p>
-        <a href="class.html" target="_blank">Class Showcase</a><BR>
-        <a href="web-store.html" target="_blank">Hack-a-thon</a><BR>
-        <a href="demo.html" target="_blank">Demo Day</a><BR>
+        <a href="http://www.karinaliner.com" target="_blank">Capstone Project</a><BR>
         <a href="https://jammming.netlify.com/" target="_blank">Spotify API web app</a><BR>
         <a href="https://reaction-game-js.netlify.com/" target="_blank">JS Reaction Game</a><BR>
         <a href="http://www.free4m.com" target="_blank">Fine Art & Design</a>
@@ -20,12 +19,10 @@ export default (state) => `<nav class="flex flex--justify">
 <figure id="contact">
     <p class="navTitles">Contact</p>
     <hr>
-    <p><a href="mailto:free4m@gmail.com">free4m @ gmail</a><BR>
-        323.481.2923<BR>
-        <p>
-            <a href="contact-form/contact-form.html">Message form</a><BR>
-            <a href="blog/blog.html">Blog</a>
-        </p>
+    <p> 3 2 3 . 4 8 1 . 2 9 2 3<BR>
+    ${state.links.gmail}
+    ${state.links.form}
+    ${state.links.blog}
     </p>
 </figure>
 </nav>`;
