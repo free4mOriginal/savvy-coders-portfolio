@@ -8,20 +8,53 @@ import reactionGame from '../images/react-game.png';
 import portraits from '../images/Moroccan.jpg';
 
 const state = {
-    "title": "Zhana Liner",
-    "images": {
-        "jammmingIMG": jammmingIMG,
-        "reactionGame": reactionGame,
-        "portraits": portraits,
-    }
+    "index": {
+        "title": "Zhana Liner",
+        "images": {
+            "jammmingIMG": jammmingIMG,
+            "reactionGame": reactionGame,
+            "portraits": portraits,
+        }
+    },
+    "contact": {
+        "title": "Contact",
+        "images": {
+            "jammmingIMG": jammmingIMG,
+            "reactionGame": reactionGame,
+            "portraits": portraits,
+        }
+    },
+    "blog": {
+        "title": "Blog",
+        "images": {
+            "jammmingIMG": jammmingIMG,
+            "reactionGame": reactionGame,
+            "portraits": portraits,
+        }
+    },
 };
 
-document.querySelector('#root').innerHTML = `
-    ${Navigation(state)}
-    ${Header(state)}
-    ${Main(state)}
-    ${Footer(state)}
+const root = document.querySelector('#root');
+
+function render(stateObj) {
+    root.innerHTML = `
+    ${Navigation(stateObj)}
+    ${Header(stateObj)}
+    ${Main(stateObj)}
+    ${Footer(stateObj)}
     `;
+}
+
+render(state.index);
+
+const links = document.querySelectorAll('nav a');
+
+links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        render(state[`${e.target.textContent.toLowerCase()}`]);
+    });
+});
 
 // Squares transitions function:
 
@@ -37,6 +70,6 @@ function transitions() {
 
     document.querySelector('div.blog-flex').style.transform = "translateY(-100px)";
     document.querySelector('div.blog-flex').style.transition = "1.2s all ease";
-};
+}
 
 setTimeout(transitions, 0);
