@@ -1,8 +1,12 @@
-export default (state) => `<div class="container">
+export default (state) => `<div id="profile"></div>
+
+<div class='contact-form'>
+
+<div class='container form'>
 
     <form action="https://formspree.io/free4m@gmail.com" method="POST">
 
-        <div class="flex flex--justify">
+        <div class="flex flex--end">
             <span>
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="userName" required />
@@ -24,8 +28,8 @@ export default (state) => `<div class="container">
             <textarea name="message" id="message" rows="8" required></textarea>
         </div>
 
-        <div class="flex flex--justify">
-            <p>What is it about --> </p>
+        <div class="flex flex--evenly">
+            <p>What is it about: </p>
             <span>
                 <input type="radio" name="subject" value="professional" id="pro" checked="checked">
                 <label for="pro">Project or job</label>
@@ -36,8 +40,8 @@ export default (state) => `<div class="container">
                 <label for="other">Something else</label>
             </span>
         </div>
-        <div>
-            <div><label for="marketing">How did you hear about me?</label>
+        <div class="flex flex--evenly">
+            <p>How did you hear about me?</p>
                 <select name="marketing" id="marketing">
                     <optgroup label="Online">
                         <option value="social">Social Media</option>
@@ -52,13 +56,13 @@ export default (state) => `<div class="container">
                     </optgroup>
                     <option value="other">Other</option>
                 </select>
-            </div>
-
-            <div>
-                <input type="submit" value="Send">
-                <input type="reset" value="Clear">
-            </div>
         </div>
+        <p class="submit-reset">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </p>
     </form>
+
+</div>
 
 </div>`;

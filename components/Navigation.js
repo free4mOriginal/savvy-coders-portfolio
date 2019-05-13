@@ -19,10 +19,12 @@ export default (state) => `<nav class="flex flex--justify">
 <figure id="contact">
     <p class="navTitles">Contact</p>
     <hr>
-    <p> 3 2 3 . 4 8 1 . 2 9 2 3<BR>
+    <p> 3 2 3 . 4 8 1 . 2 9 2 3
+    <p id="links">
     ${state.links.gmail}
     ${state.links.form}
     ${state.links.blog}
+    </p>
     </p>
 </figure>
 </nav>`;

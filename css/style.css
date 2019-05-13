@@ -35,7 +35,7 @@ a:active {
 
 /* Contact form */
 
-#contact-form {
+.contact-form {
     background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
     background-size: cover;
     background-position-y: bottom;
@@ -43,12 +43,13 @@ a:active {
 }
 
 .contact-form h1 {
-    color: white;
+    color: lightgray;
+    padding-bottom: 0;
 }
 
 #profile {
     position: fixed;
-    left: 180px;
+    left: 200px;
     top: 50px;
     width: 120px;
     height: 120px;
@@ -59,15 +60,38 @@ a:active {
     z-index: 3;
 }
 
+.submit-reset {
+    text-align: center;
+    margin: 30px;
+    opacity: 0.7;
+}
+
+#marketing {
+    opacity: 0.7;
+}
+
+button {
+    padding: 7px 20px 7px 20px;
+}
+
+[type="reset"] {
+    color: gray;
+}
+
+[type="submit"] {
+    background-color: steelblue;
+    color: #fff;
+}
+
 /* Blog page */
 
-.blog {
+/* .blog {
     background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed;
     background-size: cover;
     background-position: center;
-}
+} */
 
-.blog footer>p, .contact-form footer>p {
+footer {
     color: white;
     font-size: medium;
 }
@@ -190,10 +214,13 @@ figure>a>img {
     color: lightgray;
 }
 
-/* figure>span {
-    line-height: 0;
-    font-size: 1.6em;
-} */
+label {
+    margin: 10px 0 10px 0;
+}
+
+form>div>span {
+    padding: 5px 5px 5px 0;
+}
 
 /* Element styles */
 
@@ -219,7 +246,6 @@ li {
 
 #mainHeader {
     text-align: center;
-    padding-bottom: 90px;
 }
 
 footer {
@@ -273,12 +299,22 @@ header > p > a {
 
 /* Contact form */
 
+.form {
+    max-width: 730px;
+}
+
 .flex {
     display: flex;
 }
 
 .flex--justify {
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex--evenly {
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -411,6 +447,9 @@ p {
         height: 70px;
         border: 3px solid white;
         z-index: 3;
+    }
+    .flex--end {
+        flex-direction: column;
     }
 }
 /* @media */
