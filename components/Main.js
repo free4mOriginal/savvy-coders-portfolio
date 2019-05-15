@@ -8,19 +8,18 @@ ${state.squares}
             <figure>
                 <a href="https://jammming.netlify.com/" target="_blank">
                 <img src="${state.images.jammmingIMG}"
-                        alt="Spotify API web app"></a>
-                <figcaption>Jammming web app<BR>Spotify
-                    API, React, JS</figcaption>
+                        alt="Spotify API web app">
+                <figcaption>Spotify API React web app</figcaption></a>
             </figure>
             <figure>
                 <a href="https://reaction-game-js.netlify.com/" target="_blank"><img
-                        src="${state.images.reactionGame}" alt="JavaScript Reaction Game"></a>
-                <figcaption>JS Reaction Game</figcaption>
+                        src="${state.images.reactionGame}" alt="JavaScript Reaction Game">
+                <figcaption>JS Reaction Game web app</figcaption></a>
             </figure>
             <figure>
                 <a href="http://www.free4m.com" target="_blank"><img src="${state.images.portraits}"
-                        alt="Portrait | Morroccan Wedding"></a>
-                <figcaption>Portraits<BR>Watercolor, charcoal</figcaption>
+                        alt="Portrait | Morroccan Wedding">
+                <figcaption>Portraits | watercolor</figcaption></a>
             </figure>
     </div>
 

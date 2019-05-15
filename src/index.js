@@ -18,10 +18,12 @@ const squares = `<div id="squares">
                     <div id="blueSquare"></div>
                 </div>`;
 
-const subtitle = `<em>Web Developer <span style="color:tomato">|</span> Visual Artist</em>
-                    <p style="margin-top: 30px">
-                        <a href="https://www.linkedin.com/in/zhanaliner/" target="_blank"><i class="fab     fa-linkedin"></i></a> . . . <a href="https://github.com/free4mOriginal" target="_blank"><i class="fab fa-github"></i></a>
-                    </p>`;
+const subtitle = `<div id="subtitle">
+                    <em>Web Developer <span style="color:tomato">|</span> Visual Artist</em>
+                        <p style="margin-top: 30px">
+                            <a href="https://www.linkedin.com/in/zhanaliner/" target="_blank"><i class="fab     fa-linkedin"></i></a> . . . <a href="https://github.com/free4mOriginal" target="_blank"><i class="fab fa-github"></i></a>
+                        </p>
+                  </div>`;
 
 const state = {
     "home": {
@@ -36,7 +38,7 @@ const state = {
         "squares": squares,
     },
     "message": {
-        "title": "Message Form",
+        "title": "Send a Message",
         "links": ['Blog', 'Home'],
         "images": {
             "profile": profile,
@@ -90,6 +92,7 @@ const messageLink = () => {
     document.querySelector('h1').innerHTML = state.message.title;
     document.querySelector('main').innerHTML = `${Contact(state.message)}`;
     document.querySelector("#root").setAttribute('style', 'background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed; background-size: cover; background-position-y: bottom; background-position: center; min-height: 100vh;');
+    document.querySelector('#subtitle').setAttribute('style', 'display: none');
     setTimeout(squareTransitions30, 0);
     setTimeout(profileTransitions, 0);
 };
@@ -98,6 +101,7 @@ const blogLink = () => {
     document.querySelector('h1').innerHTML = state.blog.title;
     document.querySelector('main').innerHTML = `${Blog(state.blog)}`;
     document.querySelector("#root").setAttribute('style', 'background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed; background-size: cover; background-position: center; min-height: 100vh;');
+    document.querySelector('#subtitle').setAttribute('style', 'display: none');
     setTimeout(squareTransitions30, 0);
 };
 
@@ -105,6 +109,7 @@ const homeLink = () => {
     document.querySelector('h1').innerHTML = state.home.title;
     document.querySelector('main').innerHTML = `${Main(state.home)}`;
     document.querySelector("#root").setAttribute('style', 'background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed; background-size: cover; background-position: center; min-height: 100vh;');
+    document.querySelector('#subtitle').setAttribute('style', 'display: visible');
     setTimeout(squareTransitions30, 0);
     setTimeout(galleryTransitions, 0);
 };

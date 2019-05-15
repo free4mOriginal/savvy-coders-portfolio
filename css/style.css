@@ -146,9 +146,10 @@ figure {
     font-style: italic;
     font-size: 10pt;
     line-height: inherit;
-    border: thin white solid;
+    border: thin rgb(232, 232, 232) solid;
     padding: 5px;
     margin: 10px;
+    max-width: 200px;
 }
 
 nav>figure {
