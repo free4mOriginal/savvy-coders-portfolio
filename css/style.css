@@ -26,7 +26,7 @@ a:active {
     background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed;
     background-size: cover;
     background-position: center;
-    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 #about {
