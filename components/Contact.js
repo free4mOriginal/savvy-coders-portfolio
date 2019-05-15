@@ -1,4 +1,4 @@
-export default (state) => `<div id="profile"></div>
+export default (state) => `<div id="profile" style="background-image: url(${state.images.profile})"></div>
 
 <div class='contact-form'>
 

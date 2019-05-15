@@ -24,6 +24,7 @@ export default (state) => `<nav class="flex flex--justify">
     ${state.links.gmail}
     ${state.links.form}
     ${state.links.blog}
+    ${state.links.home}
     </p>
     </p>
 </figure>
