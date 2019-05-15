@@ -1,5 +1,7 @@
 export default (state) => `<div id="profile" style="background-image: url(${state.images.profile})"></div>
 
+${state.squares}
+
 <div class='contact-form'>
 
 <div class='container form'>

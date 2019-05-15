@@ -20,14 +20,19 @@ a:active {
     color: white;
 }
 
-/* Home page */
+footer {
+    color: white;
+    font-size: medium;
+}
 
-#root {
+#root, #home{
     background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
 }
+
+/* Home page */
 
 #about {
     padding: 0 30vw 0 30vw;
@@ -85,17 +90,6 @@ button {
 }
 
 /* Blog page */
-
-/* .blog {
-    background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed;
-    background-size: cover;
-    background-position: center;
-} */
-
-footer {
-    color: white;
-    font-size: medium;
-}
 
 .blog-flex {
     display: flex;
@@ -245,12 +239,16 @@ li {
 
 /* Main sections styles */
 
-#mainHeader {
+/* #mainHeader {
     text-align: center;
-}
+} */
 
 footer {
     padding: 50px;
+    text-align: center;
+}
+
+header {
     text-align: center;
 }
 
@@ -258,7 +256,6 @@ header > p > a {
     line-height: 1.2;
     font-size: 24pt;
     color: steelblue;
-    /* opacity: 0.6; */
 }
 
 /* Gallery container and styles */
@@ -334,27 +331,6 @@ form>span {
 
 input {
     max-width: 200px;
-}
-
-/* Nav bar blog */
-
-nav>ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#dropdown {
-    display: none;
-    position: absolute;
-}
-
-li:focus #dropdown {
-    display: block;
-}
-
-li:hover #dropdown {
-    display: block;
 }
 
 /* Blog page */

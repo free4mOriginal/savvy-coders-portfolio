@@ -12,49 +12,57 @@ import profile from '../images/profile.jpg';
 
 const root = document.querySelector('#root');
 
+const squares = `<div id="squares">
+                    <div id="goldSquare"></div>
+                    <div id="tomatoSquare"></div>
+                    <div id="blueSquare"></div>
+                </div>`;
+
+const subtitle = `Web Developer <span style="color:tomato">|</span> <i>Visual Artist</i>
+                    <BR>
+                    <p>
+                        <a href="https://www.linkedin.com/in/zhanaliner/" target="_blank"><i class="fab     fa-linkedin"></i></a> . . . <a href="https://github.com/free4mOriginal" target="_blank"><i class="fab fa-github"></i></a>
+                    </p>`;
+
 const state = {
-    "title": "Zhana Liner",
-    "links": {
-        "gmail": `<a href="#" id="emailLink">free4m @ gmail</a></BR>`,
-        "form": `<a href="#" id="messageLink">Message form</a></BR>`,
-        "blog": `<a href="#" id="blogLink">Blog</a><BR>`,
-        "home": `<a href="#" id="homeLink">Home</a>`
+    "home": {
+        "title": "Zhana Liner",
+        "subtitle": subtitle,
+        "links": ['Message', 'Blog', 'Home'],
+        "images": {
+            "jammmingIMG": jammmingIMG,
+            "reactionGame": reactionGame,
+            "portraits": portraits,
+        },
+        "squares": squares,
     },
-    "images": {
-        "jammmingIMG": jammmingIMG,
-        "reactionGame": reactionGame,
-        "portraits": portraits,
-        "profile": profile,
-    },
-    "contact": {
-        "header": `<h1>Message Form</h1>`,
+    "message": {
+        "title": "Message Form",
+        "links": ['Blog', 'Home'],
+        "images": {
+            "profile": profile,
+        },
+        "squares": squares,
     },
     "blog": {
-        "header": `<h1>Blog</h1>`,
+        "title": "Blog",
+        "links": ['Message', 'Home'],
+        "images": {
+        },
+        "squares": squares,
     },
-    "linkedIn": `<p><a href="https://www.linkedin.com/in/zhanaliner/" target="_blank"><i class="fab fa-linkedin"></i></a> . . . <a href="https://github.com/free4mOriginal" target="_blank"><i class="fab fa-github"></i></a></p>`,
 };
 
 // Transitions methods:
-const squareTransitions = () => {
-    document.querySelector("#goldSquare").style.transform = "translateY(20px)";
+
+const squareTransitions30 = () => {
+    document.querySelector("#goldSquare").style.transform = "translateY(30px)";
     document.querySelector("#goldSquare").style.transition = "2.1s all ease";
 
-    document.querySelector("#tomatoSquare").style.transform = "translateY(20px)";
+    document.querySelector("#tomatoSquare").style.transform = "translateY(30px)";
     document.querySelector("#tomatoSquare").style.transition = "1.4s all ease";
 
-    document.querySelector("#blueSquare").style.transform = "translateY(20px)";
-    document.querySelector("#blueSquare").style.transition = "0.7s all ease";
-};
-
-const squareTransitions40 = () => {
-    document.querySelector("#goldSquare").style.transform = "translateY(40px)";
-    document.querySelector("#goldSquare").style.transition = "2.1s all ease";
-
-    document.querySelector("#tomatoSquare").style.transform = "translateY(40px)";
-    document.querySelector("#tomatoSquare").style.transition = "1.4s all ease";
-
-    document.querySelector("#blueSquare").style.transform = "translateY(40px)";
+    document.querySelector("#blueSquare").style.transform = "translateY(30px)";
     document.querySelector("#blueSquare").style.transition = "0.7s all ease";
 };
 
@@ -68,31 +76,6 @@ const profileTransitions = () => {
     document.querySelector('#profile').style.transition = "1.2s all ease";
 };
 
-// Contact Navigation Link methods:
-const emailLink = () => {
-    document.querySelector('h1').innerHTML = "Email";
-};
-
-const messageLink = () => {
-    document.querySelector('header').innerHTML = state.contact.header;
-    document.querySelector('main').innerHTML = `${Contact(state)}`;
-    document.querySelector('div').setAttribute('style', 'background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed; background-size: cover; background-position-y: bottom; background-position: center;');
-    document.querySelector('div').setAttribute('class', 'contact-form');
-    setTimeout(squareTransitions40, 0);
-    setTimeout(profileTransitions, 0);
-};
-
-const blogLink = () => {
-    document.querySelector('header').innerHTML = state.blog.header;
-    document.querySelector('main').innerHTML = `${Blog(state)}`;
-    document.querySelector('div').setAttribute('style', 'background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed; background-size: cover; background-position: center;');
-    setTimeout(squareTransitions40, 0);
-};
-
-const homeLink = () => {
-    document.querySelector('h1').innerHTML = "Home";
-};
-
 // Render function:
 function render(stateObj) {
     root.innerHTML = `
@@ -103,29 +86,35 @@ function render(stateObj) {
     `;
 }
 
-render(state);
+// Contact Navigation Link methods:
+const messageLink = () => {
+    document.querySelector('h1').innerHTML = state.message.title;
+    document.querySelector('main').innerHTML = `${Contact(state.message)}`;
+    document.querySelector("#root").setAttribute('style', 'background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed; background-size: cover; background-position-y: bottom; background-position: center; min-height: 100vh;');
+    setTimeout(squareTransitions30, 0);
+    setTimeout(profileTransitions, 0);
+};
 
-document.querySelector("#emailLink").addEventListener('click', () => emailLink());
-document.querySelector("#messageLink").addEventListener('click', () => messageLink());
-document.querySelector("#blogLink").addEventListener('click', () => blogLink());
-document.querySelector("#homeLink").addEventListener('click', () => homeLink());
+const blogLink = () => {
+    document.querySelector('h1').innerHTML = state.blog.title;
+    document.querySelector('main').innerHTML = `${Blog(state.blog)}`;
+    document.querySelector("#root").setAttribute('style', 'background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed; background-size: cover; background-position: center; min-height: 100vh;');
+    setTimeout(squareTransitions30, 0);
+};
 
+const homeLink = () => {
+    document.querySelector('h1').innerHTML = state.home.title;
+    document.querySelector('main').innerHTML = `${Main(state.home)}`;
+    document.querySelector("#root").setAttribute('style', 'background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed; background-size: cover; background-position: center; min-height: 100vh;');
+    setTimeout(squareTransitions30, 0);
+    setTimeout(galleryTransitions, 0);
+};
 
-// document.querySelectorAll('#contact a').forEach((link) => {
-//     link.addEventListener('click', (e) => {
-//         e.preventDefault();
-//         let l = e.target.textContent;
-//         if (l === 'free4m @ gmail') {
-//             return state.emailLink();
-//         } else if (l === 'Message form') {
-//             return state.messageLink();
-//         } else if (l === 'Blog') {
-//             return state.blogLink();
-//         } else if (l === 'Home') {
-//             return state.homeLink();
-//         }
-//     });
-// });
+render(state.home);
 
-setTimeout(squareTransitions, 0);
+setTimeout(squareTransitions30, 0);
 setTimeout(galleryTransitions, 0);
+
+document.querySelector("#Message").addEventListener('click', () => messageLink());
+document.querySelector("#Blog").addEventListener('click', () => blogLink());
+document.querySelector("#Home").addEventListener('click', () => homeLink());

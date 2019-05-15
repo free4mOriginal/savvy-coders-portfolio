@@ -1,6 +1,6 @@
-export default (state) => `    <div class="blog">
+export default (state) => `<div class="container">
 
-<div class="container">
+${state.squares}
 
     <div class="blog-flex">
 
@@ -50,7 +50,5 @@ export default (state) => `    <div class="blog">
         </div>
 
     </div>
-
-</div>
 
 </div>`;

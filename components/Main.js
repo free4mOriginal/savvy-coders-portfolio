@@ -1,5 +1,7 @@
 export default (state) => `<main>
 
+${state.squares}
+
 <div class="container">
 
     <div class="blog-flex">

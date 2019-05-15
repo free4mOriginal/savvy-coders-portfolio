@@ -1,10 +1,10 @@
-export default (state) => `<nav class="flex flex--justify">
-<div id="squares">
-    <div id="goldSquare"></div>
-    <div id="tomatoSquare"></div>
-    <div id="blueSquare"></div>
-</div>
+const buildNavHTML = (stateLinks) => {
+    let linksHTML = '';
+    stateLinks.forEach((link) => linksHTML += `<a href="#" id="${link}">${link}</a><BR>`);
+    return linksHTML;
+};
 
+export default (state) => `<nav class="flex flex--justify">
 <figure id="portfolio">
     <p class="navTitles">Portfolio</p>
     <hr>
@@ -19,13 +19,10 @@ export default (state) => `<nav class="flex flex--justify">
 <figure id="contact">
     <p class="navTitles">Contact</p>
     <hr>
-    <p> 3 2 3 . 4 8 1 . 2 9 2 3
+    <p> 3 2 3 . 4 8 1 . 2 9 2 3<BR>
+    free4m @ gmail</p>
     <p id="links">
-    ${state.links.gmail}
-    ${state.links.form}
-    ${state.links.blog}
-    ${state.links.home}
-    </p>
+        ${buildNavHTML(state.links)}
     </p>
 </figure>
 </nav>`;
