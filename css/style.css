@@ -20,9 +20,41 @@ a:active {
     color: white;
 }
 
+/* Element styles */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2, .navTitles {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt;
+    color: grey;
+    line-height: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    text-align: center;
+}
+
+header > p > a {
+    line-height: 1.2;
+    font-size: 24pt;
+    color: steelblue;
+}
+
 footer {
     color: white;
     font-size: medium;
+    padding: 50px;
+    text-align: center;
 }
 
 #root, #home{
@@ -32,69 +64,51 @@ footer {
     min-height: 100vh;
 }
 
+/* Color squares on left */
+
+#goldSquare {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    background-color: gold;
+    left: 160px;
+    top: 200px;
+    /* transform: translateY(30px); */
+    /* transition: 2.2s all ease; */
+    z-index: 999;
+}
+
+#tomatoSquare {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    background-color: tomato;
+    left: 180px;
+    top: 200px;
+    /* transform: translateY(30px);
+    transition: 1.5s all ease; */
+    z-index: 999;
+}
+
+#blueSquare {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    background-color: steelblue;
+    left: 200px;
+    top: 200px;
+    /* transform: translateY(30px);
+    transition: 0.8s all ease; */
+    z-index: 999;
+}
+
+/* Color squares ENDS */
+
 /* Home page */
 
 #about {
     padding: 0 30vw 0 30vw;
     min-width: 250px;
-}
-
-/* Contact form */
-
-.contact-form {
-    background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
-    background-size: cover;
-    background-position-y: bottom;
-    background-position: center;
-}
-
-.contact-form h1 {
-    color: lightgray;
-    padding-bottom: 0;
-}
-
-#profile {
-    position: fixed;
-    left: 200px;
-    top: 50px;
-    width: 120px;
-    height: 120px;
-    border-radius: 100px;
-    /* background-image: url("../images/profile.jpg"); */
-    background-size: cover;
-    border: 5px solid white;
-    z-index: 3;
-}
-
-.submit-reset {
-    text-align: center;
-    margin: 30px;
-    opacity: 0.7;
-}
-
-#marketing {
-    opacity: 0.7;
-}
-
-button {
-    padding: 7px 20px 7px 20px;
-}
-
-[type="reset"] {
-    color: gray;
-}
-
-[type="submit"] {
-    background-color: steelblue;
-    color: #fff;
-}
-
-/* Blog page */
-
-.blog-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 /* Nav Bar */
@@ -149,53 +163,43 @@ nav>figure {
 
 /* Nav ENDS */
 
-figure>a>img {
-    width: 200px;
-    height: 200px;
-}
+/* Contact form */
 
-/* Color squares on left */
-
-#goldSquare {
-    width: 10px;
-    height: 10px;
+#profile {
     position: fixed;
-    background-color: gold;
-    left: 160px;
-    top: 200px;
-    /* transform: translateY(30px); */
-    /* transition: 2.2s all ease; */
-    z-index: 999;
-}
-
-#tomatoSquare {
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    background-color: tomato;
-    left: 180px;
-    top: 200px;
-    /* transform: translateY(30px);
-    transition: 1.5s all ease; */
-    z-index: 999;
-}
-
-#blueSquare {
-    width: 10px;
-    height: 10px;
-    position: fixed;
-    background-color: steelblue;
     left: 200px;
-    top: 200px;
-    /* transform: translateY(30px);
-    transition: 0.8s all ease; */
-    z-index: 999;
+    top: 50px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+    /* background-image: url("../images/profile.jpg"); */
+    background-size: cover;
+    border: 5px solid white;
+    z-index: 3;
 }
 
-/* Color squares ENDS */
+.submit-reset {
+    text-align: center;
+    margin: 30px;
+    opacity: 0.7;
+}
 
+#marketing {
+    opacity: 0.7;
+}
 
-/* Contact form styles */
+button {
+    padding: 7px 20px 7px 20px;
+}
+
+[type="reset"] {
+    color: gray;
+}
+
+[type="submit"] {
+    background-color: steelblue;
+    color: #fff;
+}
 
 .contact-form input, select, textarea {
     opacity: 0.4;
@@ -217,45 +221,17 @@ form>div>span {
     padding: 5px 5px 5px 0;
 }
 
-/* Element styles */
+/* Blog page */
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30pt;
-    text-align: center;
-    padding-top: 20px;
+.blog-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-h2, .navTitles {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16pt;
-    color: grey;
-    line-height: 0;
-}
-
-li {
-    list-style: none;
-}
-
-/* Main sections styles */
-
-/* #mainHeader {
-    text-align: center;
-} */
-
-footer {
-    padding: 50px;
-    text-align: center;
-}
-
-header {
-    text-align: center;
-}
-
-header > p > a {
-    line-height: 1.2;
-    font-size: 24pt;
-    color: steelblue;
+figure>a>img {
+    width: 200px;
+    height: 200px;
 }
 
 /* Gallery container and styles */
@@ -331,17 +307,6 @@ form>span {
 
 input {
     max-width: 200px;
-}
-
-/* Blog page */
-
-#blog-header-image {
-    background-image: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
-    background-size: cover;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
 }
 
 /* Misc styles */
