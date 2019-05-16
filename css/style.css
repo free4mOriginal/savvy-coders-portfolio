@@ -51,11 +51,21 @@ footer {
     text-align: center;
 }
 
-#root, #home{
+body > div, .backgroundHome {
     background: url("https://picsum.photos/id/415/5184/3456") no-repeat fixed;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+}
+
+.backgroundMessage {
+    background: url("https://picsum.photos/id/160/3200/2119") no-repeat fixed;
+    background-size: cover; background-position-y: bottom; background-position: center; min-height: 100vh;
+}
+
+.backgroundBlog {
+    background: url("https://picsum.photos/id/173/1200/737") no-repeat fixed;
+    background-size: cover; background-position: center; min-height: 100vh;
 }
 
 /* Color squares on left */

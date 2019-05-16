@@ -1,6 +1,4 @@
-export default (state) => `<main>
-
-${state.squares}
+export default (state) => ` ${state.squares}
 
 <div class="container">
 
@@ -38,5 +36,4 @@ ${state.squares}
         issues
         that required unconventional thinking. A self-starter I work well with minimal supervision and as an
         integral part of a team.</p>
-</div>
-</main>`;
+</div>`;
