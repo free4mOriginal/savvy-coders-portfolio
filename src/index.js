@@ -55,7 +55,6 @@ const state = {
 };
 
 // Transitions methods:
-
 const squareTransitions30 = () => {
     document.querySelector("#goldSquare").style.transform = "translateY(30px)";
     document.querySelector("#goldSquare").style.transition = "2.1s all ease";
