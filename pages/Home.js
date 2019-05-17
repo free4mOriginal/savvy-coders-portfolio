@@ -1,26 +1,34 @@
 import { squareTransitions30, galleryTransitions } from "../components/Transitions";
 
-export default (state) => ` ${state.squares}
+export default (state) => `${state.squares}
 
 <div class="container">
-
+    <div id="subtitle">
+        <p>Web Developer <span style="color:tomato">|</span> <em>Visual Artist</em></p>
+        <p>
+            <a href="https://www.linkedin.com/in/zhanaliner/" target="_blank"><i class="fab     fa-linkedin"></i></a> .
+            . . <a href="https://github.com/free4mOriginal" target="_blank"><i class="fab fa-github"></i></a>
+        </p>
+    </div>
     <div class="blog-flex">
-            <figure>
-                <a href="https://jammming.netlify.com/" target="_blank">
-                <img src="${state.images.jammmingIMG}"
-                        alt="Spotify API web app">
-                <figcaption>Spotify API React web app</figcaption></a>
-            </figure>
-            <figure>
-                <a href="https://reaction-game-js.netlify.com/" target="_blank"><img
-                        src="${state.images.reactionGame}" alt="JavaScript Reaction Game">
-                <figcaption>JS Reaction Game web app</figcaption></a>
-            </figure>
-            <figure>
-                <a href="http://www.free4m.com" target="_blank"><img src="${state.images.portraits}"
-                        alt="Portrait | Morroccan Wedding">
-                <figcaption>Portraits | watercolor</figcaption></a>
-            </figure>
+        <figure>
+            <a href="https://jammming.netlify.com/" target="_blank">
+                <img src="${state.images.jammmingIMG}" alt="Spotify API web app">
+                <figcaption>Spotify API React web app</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="https://reaction-game-js.netlify.com/" target="_blank"><img src="${state.images.reactionGame}"
+                    alt="JavaScript Reaction Game">
+                <figcaption>JS Reaction Game web app</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="http://www.free4m.com" target="_blank"><img src="${state.images.portraits}"
+                    alt="Portrait | Morroccan Wedding">
+                <figcaption>Portraits | watercolor</figcaption>
+            </a>
+        </figure>
     </div>
 
 </div>
@@ -40,5 +48,4 @@ export default (state) => ` ${state.squares}
         integral part of a team.</p>
 </div>
 <p id="setTimeoutTransitions">${setTimeout(squareTransitions30, 0)}
-${setTimeout(galleryTransitions, 0)}</p>
-`;
+    ${setTimeout(galleryTransitions, 0)}</p>`;

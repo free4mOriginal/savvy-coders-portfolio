@@ -115,7 +115,15 @@ body > div, .backgroundHome {
     min-width: 250px;
 }
 
-#setTimeoutSubtitle, #setTimeoutTransitions {
+#subtitle {
+    font-size: larger;
+    text-align: center;
+    color: gray;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+#setBackground, #setTimeoutTransitions {
     display: none;
 }
 
