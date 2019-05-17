@@ -1,4 +1,4 @@
-import squares from '../store/squares';
+import squares from '../store/Squares';
 
 
 export default {

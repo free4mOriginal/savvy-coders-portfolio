@@ -1,5 +1,5 @@
 import profile from '../images/profile.jpg';
-import squares from '../store/squares';
+import squares from '../store/Squares';
 
 export default {
     "name": "Message",
