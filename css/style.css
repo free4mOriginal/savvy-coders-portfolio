@@ -115,6 +115,10 @@ body > div, .backgroundHome {
     min-width: 250px;
 }
 
+#setTimeoutSubtitle, #setTimeoutTransitions {
+    display: none;
+}
+
 /* Nav Bar */
 
 nav {

@@ -1,3 +1,5 @@
+import { squareTransitions30 } from "../components/Transitions";
+
 export default (state) => `<div class="container">
 
 ${state.squares}
@@ -51,4 +53,6 @@ ${state.squares}
 
     </div>
 
-</div>`;
+</div>
+<p id="setTimeoutTransitions">${setTimeout(squareTransitions30, 0)}</p>
+`;

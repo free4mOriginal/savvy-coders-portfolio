@@ -4,9 +4,8 @@ import portraits from '../images/Moroccan.jpg';
 import squares from '../store/squares';
 import subtitle from '../store/subtitle';
 
-
 export default {
-    "name": "home",
+    "name": "Home",
     "title": "Zhana Liner",
     "subtitle": subtitle,
     "links": ['Message', 'Blog',],

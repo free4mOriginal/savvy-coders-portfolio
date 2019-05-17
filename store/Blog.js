@@ -2,7 +2,7 @@ import squares from '../store/squares';
 
 
 export default {
-    "name": "blog",
+    "name": "Blog",
     "title": "Blog",
     "links": ['Message', 'Home'],
     "images": {
