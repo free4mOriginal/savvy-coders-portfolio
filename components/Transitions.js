@@ -1,12 +1,12 @@
 const squareTransitions30 = () => {
     document.querySelector("#goldSquare").style.transform = "translateY(30px)";
-    document.querySelector("#goldSquare").style.transition = "2.1s all ease";
+    document.querySelector("#goldSquare").style.transition = "2.1s";
 
     document.querySelector("#tomatoSquare").style.transform = "translateY(30px)";
-    document.querySelector("#tomatoSquare").style.transition = "1.4s all ease";
+    document.querySelector("#tomatoSquare").style.transition = "1.4s";
 
     document.querySelector("#blueSquare").style.transform = "translateY(30px)";
-    document.querySelector("#blueSquare").style.transition = "0.7s all ease";
+    document.querySelector("#blueSquare").style.transition = "0.7s";
 };
 
 const galleryTransitions = () => {
