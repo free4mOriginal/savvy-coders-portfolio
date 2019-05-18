@@ -116,20 +116,20 @@ body > div, .backgroundHome {
     /* transform: translateY(30px);
     transition: 0.8s all ease; */
     z-index: 999;
-    -webkit-animation-name: blue;
+    -webkit-animation-name: blueS;
     -webkit-animation-duration: .8s;
-    animation-name: blue;
+    animation-name: blueS;
     animation-duration: 0.8s;
     /* animation-delay: .8s; */
     animation-timing-function: ease;
   }
 
-@-webkit-keyframes blue {
+@-webkit-keyframes blueS {
     from {top: 180px}
     to {top: 230px}
 }
   /* Standard syntax */
-@keyframes blue {
+@keyframes blueS {
     from {top: 180px}
     to {top: 230px}
 }
