@@ -1,5 +1,3 @@
-import { squareTransitions30, profileTransitions } from "../components/Transitions";
-
 export default (state) => `<div id="profile" style="background-image: url(${state.images.profile})"></div>
 
 ${state.squares}
@@ -69,6 +67,4 @@ ${state.squares}
 
     </div>
 </div>
-<p id="setTimeoutTransitions">${setTimeout(profileTransitions, 0)}
-${setTimeout(squareTransitions30, 0)}</p>
 `;

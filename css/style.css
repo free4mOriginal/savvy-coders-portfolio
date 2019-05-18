@@ -76,10 +76,16 @@ body > div, .backgroundHome {
     position: fixed;
     background-color: gold;
     left: 160px;
-    top: 200px;
+    top: 230px;
     /* transform: translateY(30px);
     transition: 2.2s all ease; */
     z-index: 999;
+    -webkit-animation-name: gold;
+    -webkit-animation-duration: 2.2s;
+    animation-name: gold;
+    animation-duration: 2.2s;
+    /* animation-delay: .8s; */
+    animation-timing-function: ease;
 }
 
 #tomatoSquare {
@@ -88,10 +94,16 @@ body > div, .backgroundHome {
     position: fixed;
     background-color: tomato;
     left: 180px;
-    top: 200px;
+    top: 230px;
     /* transform: translateY(30px);
     transition: 1.5s all ease; */
     z-index: 999;
+    -webkit-animation-name: tomato;
+    -webkit-animation-duration: 1.5s;
+    animation-name: tomato;
+    animation-duration: 1.5s;
+    /* animation-delay: .8s; */
+    animation-timing-function: ease;
 }
 
 #blueSquare {
@@ -100,13 +112,46 @@ body > div, .backgroundHome {
     position: fixed;
     background-color: steelblue;
     left: 200px;
-    top: 200px;
+    top: 230px;
     /* transform: translateY(30px);
     transition: 0.8s all ease; */
     z-index: 999;
+    -webkit-animation-name: blue;
+    -webkit-animation-duration: .8s;
+    animation-name: blue;
+    animation-duration: 0.8s;
+    /* animation-delay: .8s; */
+    animation-timing-function: ease;
+  }
+
+@-webkit-keyframes blue {
+    from {top: 180px}
+    to {top: 230px}
+}
+  /* Standard syntax */
+@keyframes blue {
+    from {top: 180px}
+    to {top: 230px}
 }
 
-/* Color squares ENDS */
+@-webkit-keyframes tomato {
+    from {top: 180px}
+    to {top: 230px}
+}
+@keyframes tomato {
+    from {top: 180px}
+    to {top: 230px}
+}
+
+@-webkit-keyframes gold {
+    from {top: 180px}
+    to {top: 230px}
+}
+@keyframes gold {
+    from {top: 180px}
+    to {top: 230px}
+}
+  /* Color squares ENDS */
 
 /* Home page */
 
@@ -125,6 +170,28 @@ body > div, .backgroundHome {
 
 #setBackground, #setTimeoutTransitions {
     display: none;
+}
+
+div.blog-flex {
+    padding: 20px;
+    margin-top: -40px;
+    -webkit-animation-name: gallery;
+    -webkit-animation-duration: 1.5s;
+    animation-name: gallery;
+    animation-duration: 1.5s;
+    /* animation-delay: .8s; */
+    animation-timing-function: ease;
+}
+
+@-webkit-keyframes gallery {
+    0% {transform: translateY(10px)}
+    30% {transform: translateY(40px)}
+    100% {transform: translateY(0px)}
+}
+@keyframes gallery {
+    0% {transform: translateY(10px)}
+    30% {transform: translateY(40px)}
+    100% {transform: translateY(0px)}
 }
 
 /* Nav Bar */
@@ -183,7 +250,7 @@ nav>figure {
 #profile {
     position: fixed;
     left: 200px;
-    top: 50px;
+    top: 110px;
     width: 120px;
     height: 120px;
     border-radius: 100px;
@@ -191,6 +258,23 @@ nav>figure {
     background-size: cover;
     border: 5px solid white;
     z-index: 3;
+    -webkit-animation-name: profile;
+    -webkit-animation-duration: 1.5s;
+    animation-name: profile;
+    animation-duration: 1.5s;
+    /* animation-delay: .8s; */
+    animation-timing-function: ease;
+}
+
+@-webkit-keyframes profile {
+    0% {transform: translateY(-10px)}
+    30% {transform: translateY(-30px)}
+    100% {transform: translateY(0px)}
+}
+@keyframes profile {
+    0% {transform: translateY(-10px)}
+    30% {transform: translateY(-30px)}
+    100% {transform: translateY(0px)}
 }
 
 .submit-reset {
@@ -261,6 +345,7 @@ figure>a>img {
 
 .form {
     max-width: 730px;
+    padding-top: 30px;
 }
 
 .flex {
@@ -327,17 +412,17 @@ i {
 
     #goldSquare {
         left: 60px;
-        top: 190px;
+        top: 230px;
         position: absolute;
     }
     #tomatoSquare {
         left: 80px;
-        top: 190px;
+        top: 230px;
         position: absolute;
     }
     #blueSquare {
         left: 100px;
-        top: 190px;
+        top: 230px;
         position: absolute;
     }
     
