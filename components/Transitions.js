@@ -11,12 +11,12 @@ const squareTransitions30 = () => {
 
 const galleryTransitions = () => {
     document.querySelector('div.blog-flex').style.transform = "translateY(-40px)";
-    document.querySelector('div.blog-flex').style.transition = "1.2s all ease";
+    document.querySelector('div.blog-flex').style.transition = "1.4s all ease";
 };
 
 const profileTransitions = () => {
     document.querySelector('#profile').style.transform = "translateY(60px)";
-    document.querySelector('#profile').style.transition = "1.2s all ease";
+    document.querySelector('#profile').style.transition = "1.4s all ease";
 };
 
 export { squareTransitions30, galleryTransitions, profileTransitions };

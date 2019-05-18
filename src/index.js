@@ -3,13 +3,10 @@ import Navigation from "../components/Navigation";
 import Content from "../components/Content";
 import Footer from "../components/Footer";
 
-import { squareTransitions30 } from "../components/Transitions";
-
 import * as states from '../store';
 
 const root = document.querySelector('body > div');
 
-// Render function:
 function render(state) {
     root.innerHTML = `
     ${Navigation(state)}
@@ -25,7 +22,6 @@ function render(state) {
             e.preventDefault();
             const name = e.target.textContent;
             render(states[name]);
-            // squareTransitions30();
         });
     });
 };
