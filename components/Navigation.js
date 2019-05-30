@@ -9,10 +9,10 @@ export default (state) => `<nav class="flex flex--justify">
     <p class="navTitles">Portfolio</p>
     <hr>
     <p>
-        <a href="http://www.karinaliner.com" target="_blank">Capstone Project</a><BR>
+        <a href="https://karinaliner.netlify.com/"" target="_blank">Capstone Project</a><BR>
         <a href="https://jammming.netlify.com/" target="_blank">Spotify API web app</a><BR>
         <a href="https://reaction-game-js.netlify.com/" target="_blank">JS Reaction Game</a><BR>
-        <a href="http://www.free4m.com" target="_blank">Fine Art & Design</a>
+        <a href="http://www.free4m.com/" target="_blank">Fine Art & Design</a>
     </p>
 </figure>
 

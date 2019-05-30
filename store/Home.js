@@ -1,3 +1,4 @@
+import karina from '../images/Karina.png';
 import jammmingIMG from '../images/Jammming.png';
 import reactionGame from '../images/react-game.png';
 import portraits from '../images/Moroccan.jpg';
@@ -8,6 +9,7 @@ export default {
     "title": "Zhana Liner",
     "links": ['Message', 'Blog'],
     "images": {
+        "karina": karina,
         "jammmingIMG": jammmingIMG,
         "reactionGame": reactionGame,
         "portraits": portraits,
