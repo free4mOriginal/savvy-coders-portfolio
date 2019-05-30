@@ -277,13 +277,13 @@ nav>figure {
     100% {transform: translateY(0px)}
 }
 
-.submit-reset {
-    text-align: center;
-    margin: 30px;
+#marketing {
     opacity: 0.7;
 }
 
-#marketing {
+.submit-reset {
+    text-align: center;
+    margin: 30px;
     opacity: 0.7;
 }
 

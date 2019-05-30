@@ -4,8 +4,7 @@ export default {
     "name": "Blog",
     "title": "Blog",
     "links": ['Message', 'Home'],
-    "images": {
-    },
+    "images": {},
     "squares": squares,
     "background": "backgroundBlog",
 };
