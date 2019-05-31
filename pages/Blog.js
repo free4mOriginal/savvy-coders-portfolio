@@ -14,7 +14,6 @@ ${state.squares}
         ${Blogitem(state)}
         ${Blogitem(state)}
         ${Blogitem(state)}
-        ${Blogitem(state)}
 
     </div>
 
