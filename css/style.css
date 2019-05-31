@@ -333,6 +333,12 @@ figure>a>img {
     height: 200px;
 }
 
+figcaption {
+    font-style: normal;
+    color: white;
+    text-align: left;
+}
+
 .container {
     margin: auto;
     padding: 20px;

@@ -7,4 +7,5 @@ export default {
     "images": {},
     "squares": squares,
     "background": "backgroundBlog",
+    "text": [],
 };

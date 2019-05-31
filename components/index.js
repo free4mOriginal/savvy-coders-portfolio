@@ -7,6 +7,18 @@ import * as states from '../store';
 
 const root = document.querySelector('body > div');
 
+const caption = () => {
+    fetch('https://jsonplaceholder.typicode.com/posts')
+        .then((response) => response.json())
+        .then((resJSON) => {
+            for (let i = 0; i < 100; i++) {
+                states.Blog.text.push(resJSON[Math.floor(Math.random() * 100)].body);
+            }
+        });
+};
+
+caption();
+
 function render(state) {
     root.innerHTML = `
     ${Navigation(state)}
