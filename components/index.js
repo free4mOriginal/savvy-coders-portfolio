@@ -5,24 +5,17 @@ import Footer from "./Footer";
 
 import * as states from '../store';
 
+const axios = require('axios');
+
 const root = document.querySelector('body > div');
 
-(() => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((response) => {
-            if (!response.ok) {
-                return Promise.reject(new Error('Bad request'));
-            }
-            return response.json();
-        })
-        .then((resJSON) => {
-            for (let i = 0; i < 100; i++) {
-                states.Blog.text.push(resJSON[Math.floor(Math.random() * 100)].body);
-            }
-        })
-        .catch((error) => console.error(`Error! ${error}`))
-        .finally(() => console.log('finished random caption fetch request'));
-})();
+axios.get('https://jsonplaceholder.typicode.com/posts')
+    .then((response) => {
+        for (let i = 0; i < 100; i++) {
+            states.Blog.text.push(response.data[Math.floor(Math.random() * 100)].body);
+        }})
+    .catch((error) => console.error(`Error! ${error}`))
+    .finally(() => console.log('finished random caption fetch request'));
 
 function render(state) {
     root.innerHTML = `
