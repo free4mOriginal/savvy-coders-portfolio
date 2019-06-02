@@ -7,7 +7,7 @@ import * as states from '../store';
 
 const root = document.querySelector('body > div');
 
-const caption = () => {
+(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
         .then((response) => {
             if (!response.ok) {
@@ -22,9 +22,7 @@ const caption = () => {
         })
         .catch((error) => console.error(`Error! ${error}`))
         .finally(() => console.log('finished random caption fetch request'));
-};
-
-caption();
+})();
 
 function render(state) {
     root.innerHTML = `
