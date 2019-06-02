@@ -2,12 +2,20 @@ import Header from "./Header";
 import Navigation from "./Navigation";
 import Content from "./Content";
 import Footer from "./Footer";
+import "@babel/polyfill";
 
 import * as states from '../store';
 
+const root = document.querySelector('body > div');
+
 const axios = require('axios');
 
-const root = document.querySelector('body > div');
+// function caption() {
+//     axios.get('https://jsonplaceholder.typicode.com/posts')
+//         .then((response) => response.data[Math.floor(Math.random() * 100)].body)
+//         .catch((error) => console.error(`Error! ${error}`))
+//         .finally(() => console.log('finished random caption fetch request'));
+// }
 
 axios.get('https://jsonplaceholder.typicode.com/posts')
     .then((response) => {
