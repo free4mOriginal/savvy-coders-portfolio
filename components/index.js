@@ -15,7 +15,8 @@ const caption = () => {
                 states.Blog.text.push(resJSON[Math.floor(Math.random() * 100)].body);
             }
         })
-        .catch((error) => console.error(`Error! ${error}`));
+        .catch((error) => console.error(`Error! ${error}`))
+        .finally(() => console.log('finished random caption fetch request'));
 };
 
 caption();
