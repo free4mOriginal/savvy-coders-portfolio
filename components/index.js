@@ -2,6 +2,8 @@ import Header from "./Header";
 import Navigation from "./Navigation";
 import Content from "./Content";
 import Footer from "./Footer";
+
+// This is needed for async/await operations for parcel:
 import "@babel/polyfill";
 
 import * as states from '../store';
@@ -22,8 +24,7 @@ axios.get('https://jsonplaceholder.typicode.com/posts')
         for (let i = 0; i < 100; i++) {
             states.Blog.text.push(response.data[Math.floor(Math.random() * 100)].body);
         }})
-    .catch((error) => console.error(`Error! ${error}`))
-    .finally(() => console.log('finished random caption fetch request'));
+    .catch((error) => console.error(`Error! ${error}`));
 
 function render(state) {
     root.innerHTML = `
