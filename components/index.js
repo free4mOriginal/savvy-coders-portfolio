@@ -6,11 +6,21 @@ import Footer from "./Footer";
 // This is needed for async/await operations for parcel:
 import "@babel/polyfill";
 
+// Object Destructuring
+import { capitalize } from 'lodash';
+
 import * as states from '../store';
 
-const root = document.querySelector('body > div');
+// capitalize 'Navigo' to make it clear that this is a CONSTRUCTOR FXN.
+import Navigo from 'navigo';
 
-const axios = require('axios');
+// 'axios' is NOT  fxn. constructor - no need to instantiate with 'new'
+import axios from 'axios';
+
+// origin is required to help our router handle localhost addresses
+const router = new Navigo(window.location.origin);
+
+const root = document.querySelector('body > div');
 
 // function caption() {
 //     axios.get('https://jsonplaceholder.typicode.com/posts')
@@ -43,6 +53,19 @@ function render(state) {
             render(states[name]);
         });
     });
-};
+
+    router.updatePageLinks();
+}
 
 render(states.Home);
+
+// Check the URL bar
+// Grab anything that is beyond window.location.origin (e.g. /about)
+// Assign that to an Object called params with 🔑 of path.
+// Use the 'capitalize' method from lodash that we imported to transform, for example 'about' to 'About'
+router
+    .on(':path', (params) => {
+        render(states[capitalize(params.path)]);
+    })
+    .on('/', () => render(states.Home))
+    .resolve();
