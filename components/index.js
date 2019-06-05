@@ -3,6 +3,9 @@ import Navigation from "./Navigation";
 import Content from "./Content";
 import Footer from "./Footer";
 
+// Cloudinary Image Component import:
+import {Image} from 'cloudinary-react';
+
 // This is needed for async/await operations for parcel:
 import "@babel/polyfill";
 
