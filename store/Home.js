@@ -2,6 +2,7 @@ import karina from '../images/Karina.png';
 import jammmingIMG from '../images/Jammming.png';
 import reactionGame from '../images/react-game.png';
 import portraits from '../images/Moroccan.jpg';
+import courseList from '../images/course-list.png';
 import squares from '../store/Squares';
 
 export default {
@@ -9,6 +10,7 @@ export default {
     "title": "Zhana Liner",
     "links": ['Message', 'Blog'],
     "images": {
+        "courseList": courseList,
         "karina": karina,
         "jammmingIMG": jammmingIMG,
         "reactionGame": reactionGame,

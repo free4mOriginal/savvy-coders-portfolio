@@ -1,4 +1,4 @@
-export default (state) => `${state.squares}
+export default state => `${state.squares}
 
 <div class="container">
     <div id="subtitle">
@@ -10,6 +10,12 @@ export default (state) => `${state.squares}
     </div>
     <div class="blog-flex">
         <figure>
+            <a href="https://courselist.netlify.com/" target="_blank">
+            <img src="${state.images.courseList}" alt="Searchable React web app">
+            <figcaption>Course List | Searchable React web app</figcaption>
+            </a>
+        </figure>
+        <figure>
             <a href="https://karinaliner.netlify.com/" target="_blank">
                 <img src="${state.images.karina}" alt="Karina Liner web app">
                 <figcaption>Capstone | Jewelry Designer Portfolio React web app</figcaption>
@@ -17,17 +23,23 @@ export default (state) => `${state.squares}
         </figure>
         <figure>
             <a href="https://jammming.netlify.com/" target="_blank">
-                <img src="${state.images.jammmingIMG}" alt="Spotify API web app">
+                <img src="${
+                  state.images.jammmingIMG
+                }" alt="Spotify API web app">
                 <figcaption>Spotify API React web app | Jammming</figcaption>
             </a>
         </figure>
         <figure>
-            <a href="https://reaction-game-js.netlify.com/" target="_blank"><img src="${state.images.reactionGame}" alt="JavaScript Reaction Game">
+            <a href="https://reaction-game-js.netlify.com/" target="_blank"><img src="${
+              state.images.reactionGame
+            }" alt="JavaScript Reaction Game">
                 <figcaption>JavaScript Reaction Game web app</figcaption>
             </a>
         </figure>
         <figure>
-            <a href="http://www.free4m.com" target="_blank"><img src="${state.images.portraits}"
+            <a href="http://www.free4m.com" target="_blank"><img src="${
+              state.images.portraits
+            }"
                     alt="Portrait | Morroccan Wedding">
                 <figcaption>Fine Art and Design | watercolor, charcoal</figcaption>
             </a>
