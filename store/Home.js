@@ -2,7 +2,7 @@ import karina from '../images/Karina.png';
 import jammmingIMG from '../images/Jammming.png';
 import reactionGame from '../images/react-game.png';
 import portraits from '../images/Moroccan.jpg';
-import courseList from '../images/course-list.png';
+import courseList from '../images/course-list-square.png';
 import squares from '../store/Squares';
 
 export default {
