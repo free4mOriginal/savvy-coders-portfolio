@@ -11,7 +11,7 @@ export default {
     "title": "Zhana Liner",
     "links": ['Message', 'Blog'],
     "images": {
-        "Tyro": tyro,
+        "tyro": tyro,
         "courseList": courseList,
         "karina": karina,
         "jammmingIMG": jammmingIMG,
