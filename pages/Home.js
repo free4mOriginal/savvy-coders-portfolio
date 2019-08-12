@@ -10,6 +10,12 @@ export default state => `${state.squares}
     </div>
     <div class="blog-flex">
         <figure>
+            <a href="https://tyroapp-2567e.firebaseapp.com/" target="_blank">
+            <img src="${state.images.tyro}" alt="Tyro React web app">
+            <figcaption>TYRO Dev social media SPA</figcaption>
+            </a>
+        </figure>
+        <figure>
             <a href="https://courselist.netlify.com/" target="_blank">
             <img src="${state.images.courseList}" alt="Searchable React web app">
             <figcaption>Course List | Searchable React web app</figcaption>
