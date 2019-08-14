@@ -18,13 +18,13 @@ export default state => `${state.squares}
         <figure>
             <a href="https://courselist.netlify.com/" target="_blank">
             <img src="${state.images.courseList}" alt="Searchable React web app">
-            <figcaption>Course List | Searchable React web app</figcaption>
+            <figcaption>Course List • Searchable React web app</figcaption>
             </a>
         </figure>
         <figure>
             <a href="https://karinaliner.netlify.com/" target="_blank">
                 <img src="${state.images.karina}" alt="Karina Liner web app">
-                <figcaption>Capstone | Jewelry Designer Portfolio React web app</figcaption>
+                <figcaption>Capstone • Jewelry Designer Portfolio React web app</figcaption>
             </a>
         </figure>
         <figure>
@@ -32,7 +32,7 @@ export default state => `${state.squares}
                 <img src="${
                   state.images.jammmingIMG
                 }" alt="Spotify API web app">
-                <figcaption>Spotify API React web app | Jammming</figcaption>
+                <figcaption>Spotify API React web app • Jammming</figcaption>
             </a>
         </figure>
         <figure>
@@ -46,8 +46,8 @@ export default state => `${state.squares}
             <a href="http://www.free4m.com" target="_blank"><img src="${
               state.images.portraits
             }"
-                    alt="Portrait | Morroccan Wedding">
-                <figcaption>Fine Art and Design | watercolor, charcoal</figcaption>
+                    alt="Portrait, Morroccan Wedding">
+                <figcaption>Fine Art and Design • watercolor, charcoal</figcaption>
             </a>
         </figure>
     </div>
