@@ -12,7 +12,7 @@ export default state => `${state.squares}
         <figure>
             <a href="https://tyroapp-2567e.firebaseapp.com/" target="_blank">
             <img src="${state.images.tyro}" alt="Tyro React web app">
-            <figcaption>TYRO Dev social media SPA</figcaption>
+            <figcaption>TYRO social media SPA • ReactJS/Redux/Express/Material-UI</figcaption>
             </a>
         </figure>
         <figure>
