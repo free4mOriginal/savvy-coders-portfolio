@@ -9,7 +9,7 @@ export default (state) => `<nav class="flex flex--justify">
     <p class="navTitles">Portfolio</p>
     <hr>
     <p>
-        <a href="${state.images.tyro}" target="_blank">TyroDev Social SPA</a><BR>
+        <a href="https://tyroapp-2567e.firebaseapp.com/" target="_blank">TYRO Dev Social Media SPA</a><BR>
         <a href="https://courselist.netlify.com/" target="_blank">Searchable Courselist</a><BR>
         <a href="https://karinaliner.netlify.com/" target="_blank">Capstone Project</a><BR>
         <a href="https://jammming.netlify.com/" target="_blank">Spotify API web app</a><BR>
