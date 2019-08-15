@@ -31,7 +31,7 @@ h1 {
 
 h2, .navTitles {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
     color: grey;
     line-height: 0;
 }
@@ -343,7 +343,7 @@ figure>a>img {
     margin: auto;
     padding: 20px;
     min-width: 200px;
-    max-width: 900px;
+    max-width: 940px;
     line-height: 1.5;
 }
 
