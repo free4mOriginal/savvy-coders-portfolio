@@ -5,6 +5,7 @@ import portraits from '../images/Moroccan.jpg';
 import courseList from '../images/course-list-square2.png';
 import tyro from '../images/tyro.png';
 import beer from '../images/beer.png';
+import reactris from '../images/reactris.png';
 import squares from '../store/Squares';
 
 export default {
@@ -12,6 +13,7 @@ export default {
     "title": "Zhana Liner",
     "links": ['Message', 'Blog'],
     "images": {
+        "reactris": reactris,
         "tyro": tyro,
         "beer": beer,
         "courseList": courseList,

@@ -10,6 +10,12 @@ export default state => `${state.squares}
     </div>
     <div class="blog-flex">
         <figure>
+            <a href="https://reactris.netlify.com/" target="_blank">
+            <img src="${state.images.reactris}" alt="REACTRIS">
+            <figcaption>REACTRIS • ReactJS with Hooks game</figcaption>
+            </a>
+        </figure>
+        <figure>
             <a href="https://beer-bank.netlify.com/" target="_blank">
             <img src="${state.images.beer}" alt="Beer Bank React web app">
             <figcaption>Beer Bank • ReactJS web app</figcaption>
